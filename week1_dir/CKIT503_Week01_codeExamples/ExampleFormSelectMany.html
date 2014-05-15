@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    	<title> Selecting Several Items From a Menu in an HTML Form </title>
+		<meta charset="utf-8" />
+		<link href="style1.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+     	<h1> Tell Us What You Think </h1>
+		<p> Please answer the following questions so that we can provide a better service for you. </p>
+		<form method = "post" action = "customer.php">
+		<fieldset>
+		<legend> Which of these countries have you visited? </legend>
+		<label for="country">Please select a country.</label><br />
+		<select name = "country" id = "country" size = "6" multiple = "multiple"> 
+		<option value = "NotAnswered" selected = "selected"> Not Answered </option> 
+		<option value = "Canada"> Canada </option> 
+		<option value = "Spain"> Spain </option> 
+		<option value = "Nigeria"> Nigeria </option> 
+		<option value = "Britain"> Britain </option> 
+		<option value = "Australia"> Australia </option> 
+		</select>
+	   	</fieldset>
+	   	<p>
+	   	<input type = "submit" name = "submit" value = "Submit" />
+	   	<input type = "reset" value = "Clear" />
+	   	</p>
+	   	</form>
+  </body>
+</html>

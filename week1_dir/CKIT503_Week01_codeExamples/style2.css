@@ -1,0 +1,14 @@
+a:link { /* unvisited link */
+color: #00CED1;
+}  
+
+a:visited { /* visited link */
+color: #FF1493;
+} 
+
+a:hover { /* when the mouse hovers over the link */
+color: red;
+text-decoration: none; /* the link is not underlined */
+} 
+
+
