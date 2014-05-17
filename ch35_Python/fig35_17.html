@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC
+   "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "DTD/xhtml1-transitional.dtd">
+<!-- Fig. 35.17: fig35_17.html -->
+
+<html xmlns = "http://www.w3.org/1999/xhtml" xml:lang="en"
+   lang="en">
+<head>
+   <title>Sample FORM to take user input in HTML</title>
+</head>
+
+<body style = "font-family: Arial, sans-serif; font-size: 11pt">
+    
+   <div style = "font-size: 15pt; font-weight: bold">
+      This is a sample registration form.
+   </div>
+      Please fill in all fields and click Register.
+  
+   <form method = "post" action = "/cgi-bin/fig35_18.py">
+      <img src = "images/user.gif" alt = "user" /><br />
+      <div style = "color: blue">
+         Please fill out the fields below.<br />
+      </div>
+
+      <img src = "images/fname.gif" alt = "fname" />
+      <input type = "text" name = "firstname" /><br />
+      <img src = "images/lname.gif" alt = "lname" />
+      <input type = "text" name = "lastname" /><br />
+      <img src = "images/email.gif" alt = "email" />
+      <input type = "text" name = "email" /><br />
+      <img src = "images/phone.gif" alt = "phone" />
+      <input type = "text" name = "phone" /><br />  
+
+      <div style = "font-size: 8pt">
+         Must be in the form (555)555-5555<br/><br/>
+      </div>
+
+      <img src = "images/downloads.gif" alt = "downloads" /><br />
+      <div style = "color: blue">
+         Which book would you like information about?<br />
+      </div>
+
+      <select name = "book">
+         <option>XML How to Program</option>
+         <option>Python How to Program</option>
+         <option>E-business and E-commerce How to Program</option>
+         <option>Internet and WWW How to Program 3e</option>
+         <option>C++ How to Program 4e</option>
+         <option>Java How to Program 5e</option>
+         <option>Visual Basic How to Program</option>
+      </select>
+      <br /><br />
+
+      <img src = "images/os.gif" alt = "os" /><br />
+      <div style = "color: blue">
+         Which operating system are you
+         currently using?<br />
+      </div>
+
+      <input type = "radio" name = "os" value = "Windows XP"
+         checked = "checked" />
+      Windows XP
+      <input type = "radio" name = "os" value = "Windows 2000" />
+      Windows 2000
+      <input type = "radio" name = "os" value = "Windows 95_98" />
+      Windows 95/98/ME<br />
+      <input type = "radio" name = "os" value = "Linux" />
+      Linux
+      <input type = "radio" name = "os" value = "Other" />
+      Other<br />
+      <input type = "submit" value = "Register" />
+
+   </form>
+</body>
+</html>
+
+<!-- 
+########################################################################## 
+# (C) Copyright 1992-2004 by Deitel & Associates, Inc. and               #
+# Pearson Education, Inc. All Rights Reserved.                           #
+#                                                                        #
+# DISCLAIMER: The authors and publisher of this book have used their     #
+# best efforts in preparing the book. These efforts include the          #
+# development, research, and testing of the theories and programs        #
+# to determine their effectiveness. The authors and publisher make       #
+# no warranty of any kind, expressed or implied, with regard to these    #
+# programs or to the documentation contained in these books. The authors #
+# and publisher shall not be liable in any event for incidental or       #
+# consequential damages in connection with, or arising out of, the       #
+# furnishing, performance, or use of these programs.                     #
+########################################################################## 
+-->

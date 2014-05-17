@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- Fig. 25.14: fig25_14.shtml -->
+
+<html>
+   <head>
+      <title>Using Server-Side Includes</title>
+   </head>
+
+   <body>   
+      <h3 style = "text-align: center">
+         Using Server-Side Includes
+      </h3>
+   
+      <!--#EXEC CGI="/cgi-bin/fig25_15.pl" --><br />
+   
+      The Greenwich Mean Time is 
+      <span style = "color: blue">
+         <!--#ECHO VAR="DATE_GMT" -->.
+      </span><br />
+   
+      The name of this document is 
+      <span style = "color: blue">
+         <!--#ECHO VAR="DOCUMENT_NAME" -->.
+      </span><br />
+
+      The local date is 
+      <span style = "color: blue">   
+         <!--#ECHO VAR="DATE_LOCAL" -->.
+      </span><br />
+
+      This document was last modified on 
+      <span style = "color: blue">
+         <!--#ECHO VAR="LAST_MODIFIED" -->.
+      </span><br />
+
+      Your current IP Address is 
+      <span style = "color: blue">  
+         <!--#ECHO VAR="REMOTE_ADDR" -->.
+      </span><br />
+
+      My server name is 
+      <span style = "color: blue">
+         <!--#ECHO VAR="SERVER_NAME" -->.
+      </span><br />
+
+      And I am using the 
+      <span style = "color: blue">   
+         <!--#ECHO VAR="SERVER_SOFTWARE" -->
+         Web Server.
+      </span><br />
+
+      You are using 
+      <span style = "color: blue">  
+         <!--#ECHO VAR="HTTP_USER_AGENT" -->.
+      </span><br />
+
+      This server is using 
+      <span style = "color: blue">   
+         <!--#ECHO VAR="GATEWAY_INTERFACE" -->.
+      </span><br />
+
+      <br /><br />
+      <div style = "text-align: center;
+                    font-size: xx-small">
+         <hr />
+         This document was last modified on 
+         <!--#ECHO VAR="LAST_MODIFIED" -->.
+      </div>
+   </body>
+</html>
+
+<!-- 
+ ************************************************************************** 
+ * (C) Copyright 1992-2004 by Deitel & Associates, Inc. and               *
+ * Pearson Education, Inc. All Rights Reserved.                           *
+ *                                                                        *
+ * DISCLAIMER: The authors and publisher of this book have used their     *
+ * best efforts in preparing the book. These efforts include the          *
+ * development, research, and testing of the theories and programs        *
+ * to determine their effectiveness. The authors and publisher make       *
+ * no warranty of any kind, expressed or implied, with regard to these    *
+ * programs or to the documentation contained in these books. The authors *
+ * and publisher shall not be liable in any event for incidental or       *
+ * consequential damages in connection with, or arising out of, the       *
+ * furnishing, performance, or use of these programs.                     *
+ **************************************************************************
+-->

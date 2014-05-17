@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Fig. 25.12: fig25_12.html --> 
+
+<html>
+   <head>
+      <title>Sample form to take user input in XHTML</title>
+   </head>
+
+   <body style = "font-face: arial; font-size: 12pt">
+
+      <div style = "font-size: 14pt; font-weight: bold">
+            This is a sample registration form.
+      </div>
+
+      <br /> 
+      Please fill in all fields and click Register.
+   
+      <form method = "post" action = "/cgi-bin/fig25_13.pl">
+
+         <img src = "images/user.gif" /><br />
+
+         <div style = "color: blue" >
+            Please fill out the fields below.<br />
+         </div>
+      
+         <img src = "images/fname.gif" />
+         <input type = "text" name = "fname" /><br />
+         <img src = "images/lname.gif" />
+         <input type = "text" name = "lname" /><br />
+         <img src = "images/email.gif" /> 
+         <input type = "text" name = "email" /><br />
+         <img src = "images/phone.gif" /> 
+         <input type = "text" name = "phone" /><br />
+      
+         <div style = "font-size: 10pt">
+            Must be in the form (555)555-5555.<br /><br />
+         </div>
+      
+         <img src = "images/downloads.gif" /><br />
+         <div style = "color: blue">
+            Which book would you like information about?<br />
+         </div>
+
+         <select name = "book">
+            <option>Internet and WWW How to Program 3e</option>
+            <option>C++ How to Program 4e</option>
+            <option>Java How to Program 5e</option>
+            <option>XML How to Program 1e</option>
+         </select><br /><br />
+            
+         <img src = "images/os.gif" /><br />
+         <div style = "color: blue">
+            Which operating system are you currently using?
+         </div><br />
+
+         <input type = "radio" name = "os" 
+            value = "Windows XP" checked /> 
+         Windows XP<input type = "radio" 
+            name = "os" value = "Windows 2000" /> 
+         Windows 2000<input type = "radio" 
+            name = "os" value = "Windows 98/me" /> 
+         Windows 98/me<br /><input type = "radio" 
+            name = "os" value = "Linux" /> 
+         Linux<input type = "radio" name = "os" 
+            value = "Other" /> 
+         Other<br /><input type = "submit" 
+            value = "Register" />
+      </form>
+   </body>
+</html>
+
+<!-- 
+#**************************************************************************
+#* (C) Copyright 1992-2004 by Deitel & Associates, Inc. and               *
+#* Pearson Education, Inc. All Rights Reserved.                           *
+#*                                                                        *
+#* DISCLAIMER: The authors and publisher of this book have used their     *
+#* best efforts in preparing the book. These efforts include the          *
+#* development, research, and testing of the theories and programs        *
+#* to determine their effectiveness. The authors and publisher make       *
+#* no warranty of any kind, expressed or implied, with regard to these    *
+#* programs or to the documentation contained in these books. The authors *
+#* and publisher shall not be liable in any event for incidental or       *
+#* consequential damages in connection with, or arising out of, the       *
+#* furnishing, performance, or use of these programs.                     *
+#**************************************************************************
+-->
