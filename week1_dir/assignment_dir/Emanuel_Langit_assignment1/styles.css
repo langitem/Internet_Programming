@@ -1,0 +1,11 @@
+/* Assignment 1: styles.css 
+Style sheet for assignment 1
+Author: Emanuel Langit
+Date:	21 May 2014
+
+*/
+
+body	{ font-family: "Comic Sans MS", cursive, sans-serif; background-color:#00FFFF; }
+a:hover  { color: red; text-decoration: underline; } /* text turns red when mouse hovers over a link;*/
+p	{ margin-right: 40px; } /* Set margins of paragraphs to 40*/
+ol       { margin-left: 30px; } /* set left margins of ordered list elements to 30*/
