@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    	<title> Textboxes in an HTML Form </title>
+		<meta charset="utf-8" />
+		<link href="style1.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+     	<h1> Tell Us What You Think </h1>
+		<p> Please answer the following questions so that we can provide a better service for you. </p>
+		<form method = "post" action = "customer.php">
+		<fieldset>
+		<legend> Please provide your contact details. </legend>
+		<label for="surname">Type your surname.</label><br />
+		<input name = "surname" id = "surname" type = "text" size = "20" maxlength = "30" /><br />
+		<label for="forenames">Type all your forenames.</label><br />
+		<input name = "forenames" id = "forenames" type = "text" size = "30" maxlength = "40" /><br />
+		<label for="email">Type your email address.</label><br />
+		<input name = "email" id = "email" type = "text" size = "30" maxlength = "40" /><br />
+		</fieldset>
+		<p>
+		<input type = "submit" name = "submit" value = "Submit" />
+		<input type = "reset" value = "Clear" />
+		</p>
+		</form>
+  </body>
+</html>
