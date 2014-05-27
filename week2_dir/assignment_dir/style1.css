@@ -1,0 +1,10 @@
+#table1 {
+	border-collapse: collapse;
+	background-color: white;
+}
+
+#table1 tr {
+	text-align: center;
+	font-size: 12pt;
+	border: 1px solid black;
+}

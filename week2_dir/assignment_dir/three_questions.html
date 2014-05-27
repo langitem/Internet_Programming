@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!-- Just the 3 questions section for assignment 2 -->
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title> 3 questions section</title>
+	</head>
+
+	<body>
+		<p>Please answer these 3 questions:</p>
+
+		<!-- this tag starts the form, gives the -->
+		<!-- method of sending information and the -->
+		<!-- location of the form-processing scripts -->
+		<form method = "post" action = "http://www.deitel.com">
+
+			<!-- hidden inputs contain non-visual -->
+			<!-- information that will also be submitted -->
+			<input type = "hidden" name = "recipient" value = "deitel@deitel.com">
+			<input type = "hidden" name = "subject" value = "Feedback Form">
+			<input type = "hidden" name = "redirect" value = "main.html">
+
+			<!-- <input type = "radio"> creates a radio button -->
+			<p><label>How many teams are there in the table?</label><br>
+
+				<label>Two
+					<input name = "numTeams" type = "radio"
+						value = "2" checked>
+				</label>
+				<label>Three
+					<input name = "numTeams" type = "radio"
+						value = "3" checked>
+				</label>
+				<label>Five
+					<input name = "numTeams" type = "radio"
+						value = "5" checked>
+				</label>
+
+			</p>
+
+			<p><label>Which team has the most wins?</label><br>
+
+				<label>City
+					<input name = "teamWithMostWins" type = "radio"
+						value = "City" checked>
+				</label>
+				<label>United
+					<input name = "teamWithMostWins" type = "radio"
+						value = "United" checked>
+				</label>
+				<label>Rangers
+					<input name = "teamWithMostWins" type = "radio"
+						value = "Rangers" checked>
+				</label>
+
+			</p>
+
+			<p><label>Which 2 teams have the most losses?</label><br>
+
+				<label>City
+					<input name = "teamWithMostLosses" type = "checkbox"
+						value = "City" checked>
+				</label>
+				<label>United
+					<input name = "teamWithMostLosses" type = "checkbox"
+						value = "United" checked>
+				</label>
+				<label>Wanderers
+					<input name = "teamWithMostLosses" type = "checkbox"
+						value = "Wanderers" checked>
+				</label>
+				<label>Rangers
+					<input name = "teamWithMostLosses" type = "checkbox"
+						value = "Rangers" checked>
+				</label>
+				<label>Town
+					<input name = "teamWithMostLosses" type = "checkbox"
+						value = "Town" checked>
+			</label></p>
+
+			<p><label>Please tell us in a few sentences what you thought of this quiz:<br>
+				<textarea name = "comments" rows = "7" cols = "60">Enter comments here.</textarea>
+			</label></p>
+
+			<p>
+				<input type = "submit" value = "Submit">
+				<input type = "reset" value = "Clear">
+			</p>
+		</form>
+	</body>
+
+</html>
