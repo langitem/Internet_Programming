@@ -1,18 +1,164 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset = "utf-8">
 		<title>Assignment 2</title>
+		<meta charset = "utf-8">
+		<link href="style2.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
 		<div id = "left">
-			<h1> Left-hand div </h1>
+			<h1> Left Div</h1>
 			<table id = "table1">
-		</div>
+				<!-- The <caption> tag summarizes the table's contents -->
+				<caption><strong>Table for assignment 2</strong></caption>
+
+				<!-- the <thead> section appears first in the table -->
+				<!-- it formats the table header area -->
+				<thead>
+					<tr> <!-- <tr> inserts a table row -->
+					<th>Team</th>
+					<th>Played</th>
+					<th>Won</th>
+					<th>Drawn</th>
+					<th>Lost</th>
+					<th>Points</th>
+				</thead>
+
+				<!-- all table content is enclosed within the <tbody> -->
+				<tbody>
+					<tr>
+						<td>City</td>
+						<td>8</td>
+						<td>5</td>
+						<td>2</td>
+						<td>1</td>
+						<td>17</td>
+					</tr>
+					<tr>
+						<td>United</td>
+						<td>8</td>
+						<td>4</td>
+						<td>2</td>
+						<td>2</td>
+						<td>14</td>
+					</tr>
+					<tr>
+						<td>Wanderers</td>
+						<td>8</td>
+						<td>3</td>
+						<td>2</td>
+						<td>3</td>
+						<td>11</td>
+					</tr>
+					<tr>
+						<td>Rangers</td>
+						<td>8</td>
+						<td>2</td>
+						<td>2</td>
+						<td>4</td>
+						<td>8</td>
+					</tr>
+					<tr>
+						<td>Town</td>
+						<td>8</td>
+						<td>1</td>
+						<td>2</td>
+						<td>5</td>
+						<td>5</td>
+					</tr>
+				</tbody> <!-- end of table content -->
+
+			</table> <!-- end of table -->
+		</div> <!-- end of left div -->
 
 		<div id = "right">
-			<h1> Right-hand div </h1>
-		</div>
+			<h1> Right Div</h1>
+
+			<!-- The following tag is the start of the form -->
+			<!-- It gives the method of sending information, -->
+			<!-- which is "post", and the address of the scripts -->
+			<form method = "post" action = "http://www.deitel.com">
+
+				<!-- This information will be submitted -->
+				<input type = "hidden" name = "recipient" value = "deitel@deitel.com">
+				<input type = "hidden" name = "subject" value = "Feedback Form">
+				<input type = "hidden" name = "redirect" value = "main.html">
+
+				<!-- Ask questions and use input type "radio" -->
+				<p><label>How many teams are there in the table?</label><br>
+
+					<label>Two
+						<input name = "numTeams" type = "radio" value = "2" checked>
+					</label>
+
+					<label>Three
+						<input name = "numTeams" type = "radio" value = "3" checked>
+					</label>
+
+					<label>Five
+						<input name = "numTeams" type = "radio" value = "5" checked>
+					</label>
+				</p>
+
+				<p><label>Which team has the most wins</label><br>
+
+					<label>City
+						<input name = "teamWithMostWins" type = "radio"
+							value = "City" checked>
+					</label>
+
+					<label>United
+						<input name = "teamWithMostWins" type = "radio"
+							value = "United" checked>
+
+					</label>
+
+					<label>Rangers
+						<input name = "teamWithMostWins" type = "radio"
+							value = "Rangers" checked>
+					</label>
+				</p>
+
+				<!-- Ask user a question and use input type "checkbox" -->
+				<p>
+					<label>City
+						<input name = "teamWithMostLosses" type = "checkbox"
+							value = "City" checked>
+					</label>
+
+					<label>United
+						<input name = "teamWithMostLosses" type = "checkbox"
+							value = "United" checked>
+					</label>
+
+					<label>Wanderers
+						<input name = "teamWithMostLosses" type = "checkbox"
+							value = "Wanderers" checked>
+					</label>
+
+					<label>Rangers
+						<input name = "teamWithMostLosses" type = "checkbox"
+							value = "Rangers" checked>
+					</label>
+
+					<label>Town
+						<input name = "teamWithMostLosses" type = "checkbox"
+							value = "Town" checked>
+					</label>
+
+				</p>
+
+				<!-- Provide a textbox for the user to give his or her comments -->
+				<p><label>Please us know in a few sentences what you thought of this quiz:<br>
+					<textarea name = "comments" rows = "7" cols = "60">Enter comments here.</textarea>
+				</label></p>
+
+				<p>
+					<input type = "submit" value = "Submit">
+					<input type = "reset" value = "Clear">
+				</p>
+			</form> <!-- End of the form -->
+		</div> <!-- end of right div -->
 
 	</body>
 </html>
