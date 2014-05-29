@@ -1,17 +1,26 @@
+/*
+Assignment 2 style sheet
+Author: Emanuel Langit
+Date: 28 May 2014
+*/
+
 #left {
 	width: 50%;
 	height: 500px;
 	float: left;
-	background-color: gray;
+	background-color: white;
 }
 
 #right {
 	width: 50%;
 	height: 500px;
 	float: left;
-	background-color: green;
+	background-color: white;
 }
-#table1, th, td, tr  {
+
+#table1, th, td, tr {
+	margin-left: 25%; /* 25% of div on left */
+	margin-right: 25%; /* 25% of div on right */
 	border-collapse: collapse;
 	background-color: white;
 	border: 1px solid black;
@@ -23,12 +32,3 @@
 	color: white;
 	background-color: black;
 }
-
-/*
-#table1 tr {
-	border-collapse:collapse;
-	text-align: center;
-	font-size: 12pt;
-	border: 1px solid black;
-}
-*/
