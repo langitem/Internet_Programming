@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 2 by Emanuel Langit</title>
+		<meta charset = "utf-8">
+		<link href="style2.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id = "left">
+			<!-- <h1> Left Div</h1> -->
+			<table id = "table1">
+				<!-- The following <caption> tag will be used to -->
+				<!-- provide a caption for the table -->
+				<caption><strong>Table for assignment 2</strong></caption>
+
+				<!-- the <thead> tag is used to for the table's first row (header) -->
+				<thead>
+					<tr> <!-- the <tr> tag is used to insert a row into the table -->
+						<!-- <th> tag is used to divide the row -->
+						<!-- style="text-align: left;" will be used to override -->
+						<!-- the external CSS file, and aligning the cell contents -->
+						<!-- left. This will be done for the first column to better -->
+						<!-- the example given in the assignment instructions -->
+						<th style="text-align: left;">Team</th>
+						<th>Played</th>
+						<th>Won</th>
+						<th>Drawn</th>
+						<th>Lost</th>
+						<th>Points</th>
+					</tr>
+				</thead> <!-- end of the header section -->
+
+				<!-- the <tbody> tag is used for describing table contents -->
+				<tbody>
+					<tr>
+						<!-- 1st row after header --> 
+						<td style="text-align: left;">City</td> <!-- <td> tag is used for dividing rows -->
+						<td>8</td>
+						<td>5</td>
+						<td>2</td>
+						<td>1</td>
+						<td>17</td>
+					</tr>
+					<tr>
+						<!-- 2nd row after header --> 
+						<td style="text-align: left;">United</td>
+						<td>8</td>
+						<td>4</td>
+						<td>2</td>
+						<td>2</td>
+						<td>14</td>
+					</tr>
+					<tr>
+						<!-- 3rd row after header -->
+						<td style="text-align: left;">Wanderers</td>
+						<td>8</td>
+						<td>3</td>
+						<td>2</td>
+						<td>3</td>
+						<td>11</td>
+					</tr>
+					<tr>
+						<!-- 4th row after header -->
+						<td style="text-align: left;">Rangers</td>
+						<td>8</td>
+						<td>2</td>
+						<td>2</td>
+						<td>4</td>
+						<td>8</td>
+					</tr>
+					<tr>
+						<!-- 5th row after header -->
+						<td style="text-align: left;">Town</td>
+						<td>8</td>
+						<td>1</td>
+						<td>2</td>
+						<td>5</td>
+						<td>5</td>
+					</tr>
+				</tbody> <!-- end of table contents -->
+
+			</table> <!-- end of table -->
+		</div> <!-- end of left div -->
+
+		<div id = "right">
+			<!-- <h1> Right Div</h1> -->
+
+			<!-- The following tag is the start of the form -->
+			<!-- It gives the method of sending information, -->
+			<!-- which is "post", and the address of the scripts -->
+			<form method = "post" action = "customer.php">
+
+				<!-- This information will be submitted -->
+				<input type = "hidden" name = "recipient" value = "emanuel.langit@my.ohecampus.com">
+				<input type = "hidden" name = "subject" value = "Feedback Form">
+				<input type = "hidden" name = "redirect" value = "main.html">
+
+				<!-- Ask questions and use input type "radio" -->
+				<p><label>How many teams are there in the table?</label><br>
+
+					<label>Two
+						<input name = "numTeams" type = "radio" value = "2" checked>
+					</label>
+
+					<label>Three
+						<input name = "numTeams" type = "radio" value = "3" checked>
+					</label>
+
+					<label>Five
+						<input name = "numTeams" type = "radio" value = "5" checked>
+					</label>
+				</p>
+
+				<p><label>Which team has the most wins</label><br>
+
+					<label>City
+						<input name = "teamWithMostWins" type = "radio"
+							value = "City" checked>
+					</label>
+
+					<label>United
+						<input name = "teamWithMostWins" type = "radio"
+							value = "United" checked>
+
+					</label>
+
+					<label>Rangers
+						<input name = "teamWithMostWins" type = "radio"
+							value = "Rangers" checked>
+					</label>
+				</p>
+
+				<!-- Ask user a question and use input type "checkbox" -->
+				<p>
+					<label>City
+						<input name = "teamWithMostLosses" type = "checkbox"
+							value = "City" checked>
+					</label>
+
+					<label>United
+						<input name = "teamWithMostLosses" type = "checkbox"
+							value = "United" checked>
+					</label>
+
+					<label>Wanderers
+						<input name = "teamWithMostLosses" type = "checkbox"
+							value = "Wanderers" checked>
+					</label>
+
+					<label>Rangers
+						<input name = "teamWithMostLosses" type = "checkbox"
+							value = "Rangers" checked>
+					</label>
+
+					<label>Town
+						<input name = "teamWithMostLosses" type = "checkbox"
+							value = "Town" checked>
+					</label>
+
+				</p>
+
+				<!-- Provide a textbox for the user to give his or her comments -->
+				<p><label>Please us know in a few sentences what you thought of this quiz:<br>
+					<textarea name = "comments" rows = "7" cols = "60">Enter comments here.</textarea>
+				</label></p>
+
+				<p>
+					<input type = "submit" value = "Submit">
+					<input type = "reset" value = "Clear">
+				</p>
+			</form> <!-- End of the form -->
+		</div> <!-- end of right div -->
+	</body>
+</html>

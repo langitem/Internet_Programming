@@ -1,0 +1,34 @@
+/*
+Assignment 2 style sheet
+Author: Emanuel Langit
+Date: 28 May 2014
+*/
+
+#left {
+	width: 50%;
+	height: 500px;
+	float: left;
+	background-color: white;
+}
+
+#right {
+	width: 50%;
+	height: 500px;
+	float: left;
+	background-color: white;
+}
+
+#table1, th, td, tr {
+	margin-left: 25%; /* 25% of div on left */
+	margin-right: 25%; /* 25% of div on right */
+	border-collapse: collapse; /* no space between cells */
+	background-color: white;
+	border: 1px solid black;
+	text-align: center; /* text is centered in each cell */ 
+	font-size: 12pt;
+}
+
+#table1 th {
+	color: white; /* font is white */
+	background-color: black; /* bg color is black */
+}
