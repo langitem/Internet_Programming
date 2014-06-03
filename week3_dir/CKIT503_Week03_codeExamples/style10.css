@@ -1,0 +1,66 @@
+#buttonMenu {
+position: absolute;
+top: 0px; /* The buttons will be at the very top of the page, 0 pixels from the top */
+left: 15px;
+margin: 0;
+}
+
+li.cssButton {
+display: block;  
+float: left;  /* This ensures that the menu items are displayed side by side. */
+margin-right 5px;
+text-align: center;
+list-style:none;
+}
+
+li.cssButton a {
+display: block; /* This ensures, in effect, that the entire element which contains the link is clickable and not just the text that is associated with the link. */
+color: white;
+font-weight: bold;
+width: 100px;
+text-decoration: none; /* The link is not underlined. */
+background: blue; 
+border: 5px outset blue; /* "outset" gives the impression that the button is raised, but the effect is browser dependent */
+}
+
+li.cssButton a:hover { /* When the mouse cursor hovers over the link */
+background: red; 
+} 
+
+li.cssButton a:focus { /* When the link has focus, such as when someone is using the tab key to navigate the page. */
+background: red; 
+}
+
+li.cssButton a:active { /* When the link is clicked or when it has focus and the <enter> key is pressed. */
+background: cyan;
+}
+
+h1 {
+position: absolute; /* Absolute positioning means the headline or other text which follows the button menue 
+has to be positioned precisely (in this case 30px from the top of the page). Otherwise it would be displayed partly behind the buttons at the top of the page. */
+top: 30px;
+color: blue;
+font-size: 20pt; 
+font-family: Arial, sans-serif;
+}
+
+form {
+position: absolute;
+top: 110px;
+}
+
+label {
+font-weight: bold;
+color: black;
+font-size: 12pt; 
+font-family: Arial, sans-serif;
+}
+
+#firstName:focus, #secondName:focus { /* When one of the text boxes receives the focus, the background will change to silver. */
+background: silver;
+}
+
+
+
+
+

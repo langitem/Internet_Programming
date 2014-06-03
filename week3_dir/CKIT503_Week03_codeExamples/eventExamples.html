@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	  <head>
+      		<title> Demonstrating JavaScript Event Programming </title>
+			<meta charset="utf-8" />
+			<script type = "text/javascript" src="eventExamples.js"></script>
+	  </head>
+	  <body onload = "onloadWelcome()">
+	  <!-- The load event is fired when the page is loaded/reloaded or opened -->
+	  <form onsubmit = "onsubmitMessage()">
+	  <!-- The submit event is fired when the Submit button is clicked or when the Submit button has focus and the <Enter> key is pressed --> 
+	  <fieldset>
+		<legend> What is you favourite colour ? </legend>
+		<select name = "favcolour" id = "favcolour" size = "4" onchange = "onchangeselectMessage()">
+		<!-- The change event is fired when the contents of an <input>, <select> or <textarea> element in an HTML form are changed. --> 
+		<option value = "Red" selected = "selected"> Red </option> 
+		<option value = "Blue"> Blue </option> 
+		<option value = "Green"> Green </option> 
+		<option value = "Yellow"> Yellow </option> 
+		</select>
+	  </fieldset> 
+	  <p> 
+	  <input type = "button" id = "dangerButton" value = "Do Not Click !" onmouseover = "dangerMessage()" onfocus = "dangerMessage()" onmouseout = "normalMessage()" onblur = "normalMessage()" />
+	  <!-- The mouseover event fires when the mouse cursor is over the button and the mouseout event fires when the cursor is moved off the button. The focus and blur events provide similar facilities for users employing the tab key to navigate between the HTML elements rather than the mouse. -->   
+	  </p>
+	  <p> 
+	  <label for="firstName">Type your first name.</label><br /> 
+	  <input name = "firstName" id = "firstName" type = "text" size = "10" maxlength = "20" onblur = "onblurMessage()" /><br />
+	  <!-- The blur event is fired when the input field loses focus e.g. when the cursor is moved elsewhere. --> 
+	  <label for="secondName">Type your second name.</label><br /> 
+	  <input name = "secondName" id = "secondName" type = "text" size = "10" maxlength = "20" onkeyup="capturekeyTap(event)" /><br />
+	  <!-- The keyup event is fired when a key is tapped - strictly speaking when the key comes up after after being pressed down. -->
+	  </p>
+	  <p>
+	  <input type = "submit" name = "submit" value = "Submit" />
+	  <input type = "reset" value = "Clear" />
+	  </p> 
+	  </form>
+	  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	  <head>
+      		<title> CSS Events and Buttons </title>
+			<meta charset="utf-8" />
+			<link href="style10.css" type="text/css" rel="stylesheet" />
+	  </head>
+	  <body>
+	  <ul id = "buttonMenu">
+	  <li class = "cssButton"><a href = "https://www.google.com/intl/en_uk/chrome/browser/" tabindex = "0"> Chrome </a></li> 
+	  <!-- tabindex = "0" means that any reluctant browsers will be encouraged to include these links in the list of items that will be highlighted by the tab key (often used to navigate by people with disabilities). As the value is 0, no tab order or priority is specified here. -->
+	  <li class = "cssButton"><a href = "http://windows.microsoft.com/en-gb/internet-explorer/downloads/ie" tabindex = "0"> IE </a></li>
+	  <!-- In the Safari browser you will need to change the default setting to get tab key navigation to work properly. Go to Preferences, then Advanced, and select the checkbox labeled "Press Tab to highlight each item on a webpage".  --> 
+	  <li class = "cssButton"><a href = "http://download.cnet.com/Apple-Safari/3000-2356_4-10697481.html" tabindex = "0"> Safari </a></li>
+	  <li class = "cssButton"><a href = "http://www.mozilla.org/en-US/firefox/new/" tabindex = "0"> Firefox </a></li>
+	  <li class = "cssButton"><a href = "http://www.opera.com/download/" tabindex = "0"> Opera </a></li>
+	  </ul>
+	  
+	  <h1>The headline has to be positioned precisely below <br /> the menu or it will be partly obscured by it.</h1>
+	  
+	  <form>
+	  <p> 
+	  <label for="firstName">Type your first name.</label><br /> 
+	  <input name = "firstName" id = "firstName" type = "text" size = "10" maxlength = "20" /><br />
+	  <label for="secondName">Type your second name.</label><br /> 
+	  <input name = "secondName" id = "secondName" type = "text" size = "10" maxlength = "20" /><br />
+	  </p>
+	  <p>	  
+	  <input type = "submit" name = "submit" value = "Submit" />
+	  <input type = "reset" value = "Clear" />
+	  </p>
+	  </form>
+	  </body>
+</html>
