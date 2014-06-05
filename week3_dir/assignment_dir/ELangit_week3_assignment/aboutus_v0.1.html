@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>About Us web page for week 3 group assignment by Emanuel Langit version 0.1</title>
+		<style>
+			h1 {
+				text-align:center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>The DelTal Sub Shop Restaurant</h1>
+		<h2>About Us</h2>
+
+		<div id = "owners">
+			<h3>Jeremy Davis</h3>
+			<p>
+				My name is Jeremy Davis and I am from Baltimore, Maryland in the US. I am currently a System Administrator for Laureate Education and have been with the company for six years now after graduating from Stevenson University with a Bachelor’s degree in Computer Information Systems.
+			</p>
+			<p>
+I’ve worn many hats in my time at my current job including Windows Administration, SharePoint Administration, Exchange Administration, and more recently as the Backup Administrator for our company utilizing Symantec Netbackup. I have also begun to work with our Linux team more extensively because I find it to be very interesting and I enjoy working on and learning new things. I do not have a lot of programming experience but I am looking forward to this learning experience. In my spare time I enjoy watching Baseball (Baltimore Orioles), playing cards, and traveling with my wife.
+			</p>
+			<h3>Emanuel Langit</h3>
+			<p>
+				My name Emanuel Langit, and I live in San Francisco, California, in the United States. I have a bachelor’s degree in Biology from the University of California, Santa Cruz. I started my professional career working in the laboratory performing DNA sequencing experiments and contributing to the completion of the human genome project. I eventually stopped working in the laboratory, and for the past 14 years, I have been developing, maintaining, and running bioinformatics software tools/pipelines within the biotechnology industry. Pretty much all of the software I have been involved in developing within this industry uses the command-line interface, so I am a complete novice when it comes to web programming.
+			</p>
+			<p>
+				My hobbies are playing basketball and dancing (I used to perform with a hip-hop dance troupe). However since this program has been keeping me quite busy, the only thing I have time for outside of doing school work is watching sports (basketball, baseball, and American football).
+			</p>
+			<h3>Albert Lartey</h3>
+			<p>
+				My name is Albert O. Lartey and a Ghanaian, West Africa but have migrated to the United States of America and lives in New Jersey with my three daughters, a son and a wonderful wife. I am an interesting instrumentalist and love to play the piano as well as acoustic guitar as a hobby.
+			</p>
+			<p>
+				I work for one of the famous companies in United States, Dow Jones and Company, a division of A News Corporation Company as a Senior Systems Administrator. I am in the Dow Jones Technology division which deals with Financial Information services and have approximately 14 years of working experience in the IT industry. My work involves managing myriad corporate websites, programming in C# (ASP.NET) and also writing SQL stored procedures.
+			</p>
+			<h3>Adrian Thompson</h3>
+			<p>
+				My name is Adrian Thompson and I am the Webmaster at the Ministry of National Security, Jamaica. I am 28 years of age and I have Bachelor's Degree in Computer Science and Information Technology from the University of Technology, Jamaica. I mainly focus Web Based application development using the PHP programming language but do program in Java, Python and C# as well.
+			</p>
+
+
+		</div> <!-- end of owners div -->
+
+		<div id = "message_us">
+			<h2>Contact</h2>
+			<p>Please use the form below to send us an email:</p>
+
+			<!-- start of form -->
+			<form method = "post" action = "http://laureatestudentserver.com/IN61/index.html">
+
+				<input type = "hidden" name = "receipient" value = "deitel@deitel.com">
+				<input type = "hidden" name = "subject" value = "Feedback Form">
+				<input type = "hidden" name = "redirect" value = "main.html">
+
+				<p><label>
+					Name (required):<br>
+					<input name = "name" type = "text" size = "25">
+				</label></p>
+				<p><label>
+					Email address (required):<br>
+					<input name = "email" type = "text" size = "25">
+				</label></p>
+
+				<!-- <textarea> creates a multiline textbox -->
+				<p><label>Message:<br>
+					<textarea name = "message" rows = "7" cols= "70">Enter message here.</textarea>
+				</label></p>
+
+				<p><label>Choose recipient:
+					<!-- the following presents a drop-down list -->
+					<select name = "recipient">
+						<option selected>All</option>
+						<option>Jeremy Davis</option>
+						<option>Emanuel Langit</option>
+						<option>Albert Lartey</option>
+						<option>Adrian Thompson</option>
+
+					</select>
+
+				</label></p>
+
+				<p>
+					<input type = "submit" value = "Submit">
+					<input type = "reset" value = "Clear">
+				</p> 
+
+			</form> <!-- end of form -->
+		</div> <!-- end of message_us div -->
+
+	</body>
+
+</html>
