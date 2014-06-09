@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    	<title> HTML5 Validation </title>
+		<meta charset="utf-8" />
+		<link href="style1.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+     	<h1> HTML5 Validation Controls </h1>
+		<p> Please answer the following questions so that we can provide a better service for you. </p>
+		<form>
+		<fieldset>
+		<legend>Tell us about your degree: </legend><br />
+		<label for="studyTime">What <u>p</u>ercentage of your time do you spend on your studies ? </label><br />
+		<input type = "number" name = "studyTime" id = "studyTime" min = "5" max = "100" step = "5" value = "20" accesskey = "p" autofocus /><br /><br />
+		<label for="degreeRating"><u>R</u>ate your degree programme on a scale of 1 to 5</label><br />
+		1<input type = "range" name = "degreeRating" id = "degreeRating" min = "1" max = "5" step = "1" accesskey = "r" />5<br /><br />
+		<label for="email">Type your e<u>m</u>ail address.</label><br />
+		<input type = "email" name = "mail" id = "mail" accesskey = "m" required /><br /><br />
+		<label for="webaddress">Type your <u>W</u>eb address (starting with http://).</label><br />
+		<input type = "url" name = "webaddress" id = "webaddress" accesskey = "w" /><br /><br />
+		<label for="date">When did you <u>s</u>tart your degree ?</label><br />
+		<input type = "date" name = "date" id = "date" accesskey = "s" required /><br /><br />
+		<label for="colour">Select your favourite background <u>c</u>olour. </label><br />
+		<input type = "color" name = "colour" id = "colour" accesskey = "c" /><br /><br />
+		</fieldset>
+		<p>
+		<input type = "submit" name = "submit" value = "Submit" />
+		<input type = "reset" value = "Clear" />
+		</p>
+		</form>
+  </body>
+</html>
