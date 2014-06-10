@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title> A Form to Be Validated by JavaScript </title>
-<meta charset="utf-8" />
-<script type = "text/javascript" src="JavaScriptValidation.js"></script>
-</head>
-<body>
-<form onsubmit = "return validateJS()">
-<!-- Putting return in front of the function name means that we are expecting it to return the value true or false. If it returns true (meaning all fields have been completed), the form will submit. If it returns false, the form will not submit until the fields are filled in. --> 
-<p> 
-<label for="firstName">Your first name</label><br /> 
-<input type = "text" name = "firstName" id = "firstName" size = "10" maxlength = "15"  /><br /> 
-<label for="surname">Your surname</label><br /> 
-<input type = "text" name = "surname" id = "surname" size = "10" maxlength = "15"  /><br />
-</p>
-<fieldset>
-<legend> How many years have you been studying for your degree ? </legend>
-<input type = "radio" name = "years" id = "Y5" value = "5" /> <label for="Y5"> 5 </label> <br />
-<input type = "radio" name = "years" id = "Y4" value = "4" /> <label for="Y4"> 4 </label> <br />
-<input type = "radio" name = "years" id = "Y3" value = "3" /> <label for="Y3"> 3 </label> <br />
-<input type = "radio" name = "years" id = "Y2" value = "2" /> <label for="Y2"> 2 </label> <br />
-<input type = "radio" name = "years" id = "Y1" value = "1" /> <label for="Y1"> 1 </label> <br />
-</fieldset>
-<p> 
-<input type = "submit" name = "submit" value = "Submit" />
-<input type = "reset" value = "Clear" />
-</p>
-</form>
-</body>
+	<head>
+		<title> A Form to Be Validated by JavaScript </title>
+		<meta charset="utf-8" />
+		<script type = "text/javascript" src="JavaScriptValidation.js"></script>
+	</head>
+	<body>
+		<form onsubmit = "return validateJS()">
+			<!-- Putting return in front of the function name means that we are expecting it to return the value true or false. If it returns true (meaning all fields have been completed), the form will submit. If it returns false, the form will not submit until the fields are filled in. --> 
+			<p> 
+				<label for="firstName">Your first name</label><br /> 
+				<input type = "text" name = "firstName" id = "firstName" size = "10" maxlength = "15"  /><br /> 
+				<label for="surname">Your surname</label><br /> 
+				<input type = "text" name = "surname" id = "surname" size = "10" maxlength = "15"  /><br />
+			</p>
+			<fieldset>
+				<legend> How many years have you been studying for your degree ? </legend>
+				<input type = "radio" name = "years" id = "Y5" value = "5" /> <label for="Y5"> 5 </label> <br />
+				<input type = "radio" name = "years" id = "Y4" value = "4" /> <label for="Y4"> 4 </label> <br />
+				<input type = "radio" name = "years" id = "Y3" value = "3" /> <label for="Y3"> 3 </label> <br />
+				<input type = "radio" name = "years" id = "Y2" value = "2" /> <label for="Y2"> 2 </label> <br />
+				<input type = "radio" name = "years" id = "Y1" value = "1" /> <label for="Y1"> 1 </label> <br />
+			</fieldset>
+			<p> 
+				<input type = "submit" name = "submit" value = "Submit" />
+				<input type = "reset" value = "Clear" />
+			</p>
+		</form>
+	</body>
 </html>
