@@ -87,14 +87,23 @@ function determineVowelWinner(numberOfAs, numberOfEs, numberOfIs, numberOfOs, nu
 	
 	var aeiouArray = new Array(5);
 	aeiouArray = [numberOfAs, numberOfEs, numberOfIs, numberOfOs, numberOfUs];
-	var largestTotal = Math.max.apply(Math, aeiouArray); // find largest value
+	
+	/*
+	 * find largest value using Math.Max() function. The explanation of this fcn
+	 * is found here:
+	 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
+	 */
+	var largestTotal = Math.max.apply(Math, aeiouArray);
+	var secondLargestTotal = getSecondLargestNum(aeiouArray);
+	alert(secondLargestTotal);
 	
 	/*
 	 * The following array is needed in case of a tie. It will hold indices of
 	 * aeiouArray whose value is equal to largestTotal
 	 */
 	var winnersArray = [];
-	var currentWinner;
+	var secondPlaceArray = [];
+	//var currentWinner;
 	
 	/*
 	 * Loop through array looking for values equaling largestTotal. Those that
@@ -105,6 +114,8 @@ function determineVowelWinner(numberOfAs, numberOfEs, numberOfIs, numberOfOs, nu
 		
 		if (currentTotal == largestTotal) {
 			winnersArray.push(i);
+		} else if ((currentTotal == secondLargestTotal) && (secondLargestTotal != 0)) {
+			secondPlaceArray.push(i);
 		}
 
 	} // end of for loop
@@ -135,6 +146,55 @@ function determineVowelWinner(numberOfAs, numberOfEs, numberOfIs, numberOfOs, nu
 				break;
 		
 		} // end switch
-	} // end of for loop
+	} // end of looping over winnersArray[]
+	
+	/*
+	 * Look through secondPlaceArray[]. All values here correspond to the index of
+	 * aeiouArray. The text area belonging to index will have its background
+	 * color changed to silver.
+	 */
+	for (var i = 0; i < secondPlaceArray.length; ++i ) {
+		
+		switch (secondPlaceArray[i]) {
+		
+			case 0:
+				document.getElementById("numberOfAs").style.background = "silver";
+				break;
+			case 1:
+				document.getElementById("numberOfEs").style.background = "silver";
+				break;
+			case 2:
+				document.getElementById("numberOfIs").style.background = "silver";
+				break;
+			case 3:
+				document.getElementById("numberOfOs").style.background = "silver";
+				break;
+			case 4:
+				document.getElementById("numberOfUs").style.background = "silver";
+				break;
+		
+		} // end switch
+	} // end of looping over secondPlaceArray[]
+	
 	
 } // end of determineVowelWinner function
+
+function getSecondLargestNum(aeiouArray) {
+	var largestTotal = Math.max.apply(Math, aeiouArray);
+	var secondLargestSoFar = 0;
+	
+	for (var i=0; i < aeiouArray.length; ++i) {
+		
+		if ((aeiouArray[i] < largestTotal) && (aeiouArray[i] > secondLargestSoFar)){
+			secondLargestSoFar = aeiouArray[i];
+		}
+	}
+	
+	return secondLargestSoFar;
+	
+} // end of getSecondLargest function
+
+function getThirdLargestNum(aeiouArray) {
+	var largestTotal = Math.max.apply(Math, aeiouArray);
+	
+} // end of getThirdLargest function
