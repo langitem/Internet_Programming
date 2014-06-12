@@ -19,7 +19,7 @@ function countNumVowels(textInput) {
 	/*
 	 * The following variable assignment use the match method to find
 	 * occurrences of regular expression. These occurrences are stored in
-	 * the corresponding variable.
+	 * the corresponding variable. The g denotes to find all occurrences.
 	 */
 	var vowels = textInput.match(/[AEIOUaeiou]/g);
 	var aString = textInput.match(/[Aa]/g);
@@ -27,17 +27,42 @@ function countNumVowels(textInput) {
 	var iString = textInput.match(/[Ii]/g);
 	var oString = textInput.match(/[Oo]/g);
 	var uString = textInput.match(/[Uu]/g);
-	
+
 	/*
 	 * If string lengths are not null, set value to the length of the string
-	 * else, set them to zero
+	 * else, leave them at zero
 	 */
-	var numberOfVowels = vowels != null ? vowels.length : 0;
-	var numberOfAs = vowels != null ? aString.length : 0;
-	var numberOfEs = eString != null ? eString.length : 0;	
-	var numberOfIs = iString != null ? iString.length : 0;
-	var numberOfOs = oString != null ? oString.length : 0;
-	var numberOfUs = uString != null ? uString.length : 0;
+    var numberOfVowels = 0;
+    var numberOfAs = 0;
+    var numberOfEs = 0;
+    var numberOfIs = 0;
+    var numberOfOs = 0;
+    var numberOfUs = 0;
+    
+    if (vowels != null) {
+    	numberOfVowels = vowels.length;
+    }
+    
+    if (aString != null) {
+    	numberOfAs = aString.length;
+    }
+
+    if (eString != null) {
+    	numberOfEs = eString.length;
+    }
+    
+    if (iString != null) {
+    	numberOfIs = iString.length;
+    }
+    
+    if (oString != null) {
+    	numberOfOs = oString.length;
+    }
+    
+    if (uString != null) {
+    	numberOfUs = uString.length;
+    }
+    
 
 	// display occurrences of each vowel on the web page:
 	document.getElementById("numberOfVowels").value = numberOfVowels;
