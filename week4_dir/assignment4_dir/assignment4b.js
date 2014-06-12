@@ -1,5 +1,11 @@
 function analyzeText() {
 	var textInput = document.getElementById("textInputFromUser").value;
+	
+	/*
+	 * The following validates if text was entered by the user. If not, then
+	 * alert the user. Else, pass the text that was entered to the
+	 * countNumVowels function.
+	 */
 	if ((textInput == "") || (textInput == null)) {
 		alert("Please enter text");
 	} else {
@@ -10,6 +16,11 @@ function analyzeText() {
 
 function countNumVowels(textInput) {
 
+	/*
+	 * The following variable assignment use the match method to find
+	 * occurrences of regular expression. These occurrences are stored in
+	 * the corresponding variable.
+	 */
 	var vowels = textInput.match(/[AEIOUaeiou]/g);
 	var aString = textInput.match(/[Aa]/g);
 	var eString = textInput.match(/[Ee]/g);
@@ -27,8 +38,8 @@ function countNumVowels(textInput) {
 	var numberOfIs = iString != null ? iString.length : 0;
 	var numberOfOs = oString != null ? oString.length : 0;
 	var numberOfUs = uString != null ? uString.length : 0;
-	
 
+	// display occurrences of each vowel on the web page:
 	document.getElementById("numberOfVowels").value = numberOfVowels;
 	document.getElementById("numberOfAs").value = numberOfAs;
 	document.getElementById("numberOfEs").value = numberOfEs;
@@ -51,10 +62,12 @@ function determineVowelWinner(numberOfAs, numberOfEs, numberOfIs, numberOfOs, nu
 	 * aeiouArray whose value is equal to largestTotal
 	 */
 	var winnersArray = [];
-	
-	var biggestSoFar = 0;
 	var currentWinner;
 	
+	/*
+	 * Loop through array looking for values equaling largestTotal. Those that
+	 * are equal will have their index pushed into the winnersArray[]
+	 */
 	for (var i=0; i < aeiouArray.length; ++i) {
 		currentTotal = aeiouArray[i];
 		
@@ -64,6 +77,11 @@ function determineVowelWinner(numberOfAs, numberOfEs, numberOfIs, numberOfOs, nu
 
 	} // end of for loop
 	
+	/*
+	 * Look through winnersArray[]. All values here correspond to the index of
+	 * aeiouArray. The text area belonging to index will have its background
+	 * color changed to gold.
+	 */
 	for (var i = 0; i < winnersArray.length; ++i ) {
 		
 		switch (winnersArray[i]) {

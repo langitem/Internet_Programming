@@ -5,11 +5,13 @@
 	<head>
 		<title>Assignment 4</title>
 		<meta charset = "utf-8">
+		<link href="StyleSheet.css" rel="stylesheet" />
 		<script type = "text/javascript" src="assignment4b.js"></script>
 	</head>
 	<body>
+	  <h2>Assignment 4 by Emanuel Langit</h2>
 		<form>
-			<fieldset>
+		   <fieldset>
 				<legend>Enter up to 10 or more characters in the text area below:</legend>
 				<textarea name = "textInputFromUser" id = "textInputFromUser" rows = "1" cols = "10"></textarea>
 			</fieldset>
@@ -36,14 +38,18 @@
          <fieldset>
             <legend> Number of U's</legend>
             <textarea name = "numberOfUs" id = "numberOfUs" rows = "1" cols = "2" ></textarea>
-         </fieldset>
-			
-		
-		    <p>
-	           <input type = "button" id = "getTextFromUser" value = "Click to analyze text" onclick = "analyzeText()" />
-	           <input type = "reset" value = "Clear" />
+         </fieldset>		
+		   <p>
+		      <input type = "button" id = "getTextFromUser" value = "Click to analyze text" onclick = "analyzeText()" />
+            <input type = "reset" value = "Clear" />
 		    </p>
 		</form>
 	</body>
-
 </html>
+
+<!--
+Author:  Emanuel Langit
+Date:    11 June 2014
+Notes:   Fieldsets were modeled after the examples given in extractRefNo.html from the week 4
+         code examples.
+ -->
