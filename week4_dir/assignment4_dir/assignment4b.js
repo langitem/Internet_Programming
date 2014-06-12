@@ -18,8 +18,8 @@ function countNumVowels(textInput) {
 	var uString = textInput.match(/[Uu]/g);
 	
 	/*
-	 * If there are no occurrences of each of the following,
-	 * then set the value zero, else, count the lengths
+	 * If string lengths are not null, set value to the length of the string
+	 * else, set them to zero
 	 */
 	var numberOfVowels = vowels != null ? vowels.length : 0;
 	var numberOfAs = vowels != null ? aString.length : 0;
@@ -35,5 +35,35 @@ function countNumVowels(textInput) {
 	document.getElementById("numberOfIs").value = numberOfIs;
 	document.getElementById("numberOfOs").value = numberOfOs;
 	document.getElementById("numberOfUs").value = numberOfUs;
+	
+	determineVowelWinner(numberOfAs, numberOfEs, numberOfIs, numberOfOs, numberOfUs);
 
-}
+} // end of countNumVowels function
+
+function determineVowelWinner(numberOfAs, numberOfEs, numberOfIs, numberOfOs, numberOfUs) {
+	
+	var aeiouArray = new Array(5);
+	aeiouArray = [numberOfAs, numberOfEs, numberOfIs, numberOfOs, numberOfUs];
+	var largestTotal = Math.max.apply(Math, aeiouArray); // find largest value
+	
+	var winnersArray = []; // will hold indices of aeiouArray whose value is equal to largestTotal
+	
+	var biggestSoFar = 0;
+	var currentWinner;
+	
+	for (var i=0; i < aeiouArray.length; ++i) {
+		currentTotal = aeiouArray[i];
+		
+		if (currentTotal == largestTotal) {
+			winnersArray.push(i);
+		}
+
+	} // end of for loop
+	
+	var tmpString = "";
+	for (var i = 0; i < winnersArray.length; ++i ) {
+		tmpString += winnersArray[i] + " ";
+	} // end of for loop
+	alert(tmpString);
+	
+} // end of determineVowelWinner function
