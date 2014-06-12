@@ -1,6 +1,13 @@
 function analyzeText() {
 	var textInput = document.getElementById("textInputFromUser").value;
 	
+	// Set textboxes to white in case it was just run:
+	document.getElementById("numberOfAs").style.background = "white";
+	document.getElementById("numberOfEs").style.background = "white";
+	document.getElementById("numberOfIs").style.background = "white";
+	document.getElementById("numberOfOs").style.background = "white";
+	document.getElementById("numberOfUs").style.background = "white";
+	
 	/*
 	 * The following validates if text was entered by the user. If not, then
 	 * alert the user. Else, pass the text that was entered to the
