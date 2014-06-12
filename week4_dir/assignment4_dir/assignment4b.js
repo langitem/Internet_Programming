@@ -46,7 +46,11 @@ function determineVowelWinner(numberOfAs, numberOfEs, numberOfIs, numberOfOs, nu
 	aeiouArray = [numberOfAs, numberOfEs, numberOfIs, numberOfOs, numberOfUs];
 	var largestTotal = Math.max.apply(Math, aeiouArray); // find largest value
 	
-	var winnersArray = []; // will hold indices of aeiouArray whose value is equal to largestTotal
+	/*
+	 * The following array is needed in case of a tie. It will hold indices of
+	 * aeiouArray whose value is equal to largestTotal
+	 */
+	var winnersArray = [];
 	
 	var biggestSoFar = 0;
 	var currentWinner;
@@ -60,9 +64,7 @@ function determineVowelWinner(numberOfAs, numberOfEs, numberOfIs, numberOfOs, nu
 
 	} // end of for loop
 	
-	var winnersString = "";
 	for (var i = 0; i < winnersArray.length; ++i ) {
-		winnersString += winnersArray[i] + " ";
 		
 		switch (winnersArray[i]) {
 		
@@ -84,10 +86,5 @@ function determineVowelWinner(numberOfAs, numberOfEs, numberOfIs, numberOfOs, nu
 		
 		} // end switch
 	} // end of for loop
-	
-	//document.getElementById("numberOfOs").style.background = "gold";
-	
-	
-	
 	
 } // end of determineVowelWinner function
