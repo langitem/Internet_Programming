@@ -60,10 +60,34 @@ function determineVowelWinner(numberOfAs, numberOfEs, numberOfIs, numberOfOs, nu
 
 	} // end of for loop
 	
-	var tmpString = "";
+	var winnersString = "";
 	for (var i = 0; i < winnersArray.length; ++i ) {
-		tmpString += winnersArray[i] + " ";
+		winnersString += winnersArray[i] + " ";
+		
+		switch (winnersArray[i]) {
+		
+			case 0:
+				document.getElementById("numberOfAs").style.background = "gold";
+				break;
+			case 1:
+				document.getElementById("numberOfEs").style.background = "gold";
+				break;
+			case 2:
+				document.getElementById("numberOfIs").style.background = "gold";
+				break;
+			case 3:
+				document.getElementById("numberOfOs").style.background = "gold";
+				break;
+			case 4:
+				document.getElementById("numberOfUs").style.background = "gold";
+				break;
+		
+		} // end switch
 	} // end of for loop
-	alert(tmpString);
+	
+	//document.getElementById("numberOfOs").style.background = "gold";
+	
+	
+	
 	
 } // end of determineVowelWinner function
