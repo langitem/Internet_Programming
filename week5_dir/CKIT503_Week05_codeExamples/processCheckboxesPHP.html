@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    	<title> Processing Checkboxes in PHP </title>
+		<meta charset="utf-8" />
+		<link href="style1.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+     	<h1> Tell Us What You Think </h1>
+		<p> Please answer the following questions so that we can provide a better service for you. </p>
+		<form method = "post" action = "checkboxes.php">
+		<fieldset>
+		<legend> Which of these do you own ? </legend>
+		<input type = "checkbox" name = "ItemsOwned[]" id = "IO1" value = "laptop" /> <label for="IO1"> A laptop computer </label> <br />
+		<input type = "checkbox" name = "ItemsOwned[]" id = "IO2" value = "blackberry" /> <label for="IO2"> A Blackberry </label> <br />
+		<input type = "checkbox" name = "ItemsOwned[]" id = "IO3" value = "iphone" /> <label for="IO3"> An iPhone </label> <br />
+		<input type = "checkbox" name = "ItemsOwned[]" id = "IO4" value = "ipad" /> <label for="IO4"> An iPad </label> <br />
+		<input type = "checkbox" name = "ItemsOwned[]" id = "IO5" value = "labrador" /> <label for="IO5"> A Labrador called Donald </label> <br />
+		</fieldset>
+		<p>
+		<input type = "submit" name = "submit" value = "Submit" />
+		<input type = "reset" value = "Clear" />
+		</p>
+		</form>
+  </body>
+</html>
