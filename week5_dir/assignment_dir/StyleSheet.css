@@ -1,0 +1,260 @@
+﻿/**Author: Albert O. Lartey**/
+/**Project: Week 3 Group HIA**/
+
+/**setting initial padding to zero**/
+* {
+    padding: 0px;
+}
+
+/**setting up general properties for the page**/
+body {
+
+    font: 12px/18px Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    flex-direction: column;
+    background-color:#dcdca1;
+}
+
+/**primarily, setting the page formatt to center**/
+header, section, footer, hgroup{ 
+    display: block; 
+}
+
+/*This section is used by the video tag in the HTLM5 project */   
+video {
+     width:300px;
+     height:140px;
+      padding-left:120px;
+}
+
+#video_title {
+          padding-left:160px;
+}
+
+/**Customizing the about the company and video for inline display - START HERE**/
+#about_deltal_company_description {
+    background-color:#f7fcfc;
+    padding-left:20px;
+}
+
+#about_deltal_company_description li {
+    display: inline-block;
+    list-style: none;
+    width:480px;
+    border-right: 1px solid;
+}
+
+#about_deltal_company_description li:last-child {
+        border-right: none;
+}
+
+.company_description {
+    font-weight:600;
+}
+/**Customizing the about the company and video for inline display - ENDS HERE**/
+
+/***COMPANY LOGO AND NAME FORMATION - STARTS FROM THIS SECTION**/
+/**Attaching company logo and name**/
+#logo_header {
+    border: 1px solid #d3cfcf;
+    background: linear-gradient(55deg, #4B4242, white);
+    background:-webkit-linear-gradient(55deg, #4B4242, white);
+    background:-moz-linear-gradient(55deg, #4B4242, white);
+}
+
+/**controlling the image border radius**/
+.company_logo {
+    width:80px;
+    height: 60px;
+    margin-left:2px;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
+
+
+/**The header text utilizes h3 tag and therefore this setting is being applied to augment that tag**/
+h1 {
+    font-size: 250%;
+    font-stretch:ultra-expanded;
+    color:aliceblue;
+    border-bottom-color: azure;
+    text-shadow: -4px 4px 2px orange;
+    padding:8px; 
+    float:right;
+}
+
+
+/**Customizing the header listing to display inline block**/
+#logo_header li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 5px; 
+    padding-right: 5px;
+}
+
+
+
+
+/**creating the top header through css and also wrapping those two images to blend the header background color**/
+#top_header {
+    border: 1px solid #d3cfcf;
+    background: linear-gradient(55deg, #4B4242, white);
+    background:-webkit-linear-gradient(55deg, #4B4242, white);
+    background:-moz-linear-gradient(55deg, #4B4242, white);
+    height:100px;
+    text-align:center;
+}
+
+
+/**the overall div tag uses the big wrapper with a page width of 1000px**/
+#main_wrapper {
+    width: 1000px;
+    min-height: 800px;
+    margin: 10px auto;
+    text-align:left;
+    position:relative;
+    background-color:white;
+}
+
+/**Customizing the header listing to display inline block**/
+nav {
+    background-color:#404d94;
+    height: 30px;
+}
+
+    nav ol {
+    background-color:#404d94;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+
+#navigation_header li {
+    float: left;
+    display: inline-block;
+    list-style: none;
+    border-right: 1px solid white; 
+    padding-left: 5px; 
+    padding-right: 5px;
+}
+
+#navigation_header li:last-child {
+    float: right;
+    border-right: none;
+    border-left: none;
+}
+
+
+/* removing text decor associated with the a tag in the HTLM5 project */
+a {
+    text-decoration:none;
+    text-justify:distribute;
+    text-decoration-style:solid;
+    font-size:small;
+    color:white;
+    font-weight:800;
+}
+
+a:visited {
+    background-color:#7d93cf;
+} /* visited link */
+
+a:hover {
+    background-color:#FF704D;
+}   /* mouse over link */
+
+a:active {
+    background-color:#FF704D;
+}  /* selected link */
+
+
+   /**Telling the world about the Deltal sub shop company**/
+.about_deltal_company {
+    text-align:center;
+}
+
+.about_deltal_company_description {
+    text-align:left;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align:justify;	
+    text-justify:inter-word;
+}
+
+
+#main_content_section {
+    float:left;
+}
+
+
+/**DealTal's content and image listings**/
+#main_content_section li {
+    display: inline-block;
+    list-style: none;
+    border-right: 1px solid gray;
+    padding-left: 30px; padding-right: 5px;
+    width: 460px;   
+     
+}
+
+    #main_content_section li:last-child {
+        border-right: none;
+    }
+
+
+/**DealTal's content styling**/
+.main_content_image {
+    width:400px;
+    height: 320px;
+    margin-left:20px;
+    margin-right:20px;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    animation-fill-mode:forwards;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+
+/**the footer section features enabled**/
+footer {
+    clear:both;
+    color:black;
+    text-align:center;
+    border-right:1px groove;
+    border-top-left-radius:25px;
+    -webkit-border-top-left-radius:25px;
+    -moz-border-radius-topleft:25px;
+    border-top-right-radius:25px;
+    -webkit-border-top-right-radius:25px;
+    -moz-border-radius-topright:25px;
+    background: linear-gradient(55deg, #4B4242, white);
+    background:-webkit-linear-gradient(55deg, #4B4242, white);
+    background:-moz-linear-gradient(55deg, #4B4242, white);
+    margin-top:10px;
+    padding:5px 5px 5px 5px;
+    font-weight:bold;
+}
+
+/**The company footer and authors details**/
+#footer li {
+    display: inline-block;
+    list-style: none;
+    border-right: 1px solid gray;
+    padding-left: 5px; padding-right: 5px;
+}
+
+    #footer li:first-child {
+        padding-left: 0px;
+    }
+
+    #footer li:last-child {
+        border-right: none;
+    }
+
+
+#owners, #message_us {
+    padding-left: 20px;
+    padding-right: 20px;
+}    

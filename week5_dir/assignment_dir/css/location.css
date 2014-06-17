@@ -1,0 +1,111 @@
+﻿.location-main-heading {
+    margin: 10px 20px 20px;
+}
+
+.location-main-heading h3 {
+    color: #666666;
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 35px;
+    margin-bottom: 14px;
+}
+
+.location-main-body {
+    margin: 20px;
+    width: 100%;
+}
+
+.locations {
+    height: 350px;
+}
+
+.locations.last {
+    padding: 0 0 10px;
+}
+
+.location-main-body .location-left {
+    float: left;
+    margin-right: 10px;
+    width: 58%;
+}
+
+.location-main-body .location-left p span {
+    display: block;
+}
+
+.location-main-body .location-left .left-image {
+    float: left;
+}
+
+.location-main-body .location-left .left-image img {
+    border: 2px solid #cccccc;
+    padding: 1px;
+    width: 250px; 
+}
+
+.location-main-body .location-left .left-content {
+    float: right;
+}
+
+.location-left .opening-hours {
+    padding-left: 30px;
+}
+
+.location-main-body .location-right {
+    float: right;
+    width: 40%;
+}
+
+#map_canvas_1, #map_canvas_2, #map_canvas_3, #map_canvas_4 {
+    background-color: #cccccc;
+    border: 5px solid #cccccc;
+    height: 250px;
+    margin: 0 0 50px;
+    width: 350px;
+}
+
+.map-info {
+    
+}
+
+.map-info p span {
+    display: block;
+}
+
+.email a {
+    color: blue;
+    font-weight: normal;
+}
+
+.email a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/** Should be changed in main css file **/
+nav {
+    height: 30px;
+}
+
+#navigation_header li {
+    float: left;
+}
+
+#navigation_header li:last-child {
+    float: right;
+}
+
+.feedback {
+    height: 550px;
+    margin: 30px 20px 0;
+}
+
+.feedback fieldset {
+    padding: 10px;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    width: 99%;
+}

@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--Title section of this project-->
+    <title>Register With The DelTal Sub Shop Restaurant</title>
+
+    <!--The project meta information-->
+    <meta charset="UTF-8">
+    <meta name="description" content="The DelTal Sub Shop Restaurant">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Albert O. Lartey">
+
+    <!--The shortcut icon, Web site icon, tab icon or bookmark icon-->
+    <link rel="icon" type="image/x-icon" href="images/DelTal-icon.jpg" />
+
+    <!--Linking stylesheet to the prohject-->
+    <link href="css/main.css" rel="stylesheet" />
+
+    <!--validating users input through external JavaScript-->
+    <script src="Scripts/FormValidation.js"></script>
+
+</head>
+<body>
+
+    <!--Main div for the registration page-->
+    <div id="main_wrapper">
+
+        <!--Start, main header &  company logo div-->
+        <div id="main_header_div">
+            <a href="#">
+                <img src="images/header.jpg" alt="The DelTal Sub Shop Restaurant" id="Header_background_img" />
+            </a>
+            <!--Start, navbar div-->
+            <div id="navbar">
+                <ul class="nav">
+                    <li><a href="index.html" tabindex="0">Home</a></li>
+                    <li><a href="menu.html" tabindex="0">Menu</a></li>
+                    <li><a href="location.html" tabindex="0">Location</a></li>
+                    <li><a href="aboutus.html" tabindex="0">About Us</a></li>
+                    <li><a href="register.html" tabindex="0">Register</a></li>
+                    <li>
+                        <form method="get" action="http://www.google.com/search">
+                            <div id="Div1">
+                                <input type="text" name="q" size="25" style="color: #808080;"
+                                    maxlength="255" value="Google site search"
+                                    onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; " />
+                                <input type="submit" value="Go!" />
+                                <input type="hidden" name="sitesearch" value="yoursite.com" />
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!--End, navbar div-->
+        </div>
+
+        <!--Start, clear div-->
+        <div class="clear_div"></div>
+        <!--End, clear div-->
+
+
+        <!--The sigup wrapup div page-->
+        <div id="main_div_section">
+
+            <!-- Sign up title div -->
+            <div id="signup_header">
+                <fieldset>
+                    <legend>QUICK SIGNUP FORM</legend>
+
+
+                    <!--The signup left div for the registration page-->
+                    <div id="sign_up_left">
+                        <h4>Get Started with a Free Account</h4>
+                        <p>
+                            Sign up in 30 seconds. No credit card required. If you already have
+                    <br />
+                            a DelTal Sub Shop account, continue shopping.
+                        </p>
+                        <ul>
+                            <li>
+                                <img alt="Image from Google" src="images/email.jpg" class="sign_up_left_image" title="Email notification" /></li>
+                            <li>Receive instant signup email alert message
+                    <br />
+                                on new recipes.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img alt="Image from Google" src="images/star.jpg" class="sign_up_left_image" title="What's your favorite?" /></li>
+                            <li>Save your searches and favorite sub shop sandwich
+                    <br />
+                                along  with notes and ratings.</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img alt="Send text message" src="images/iphone.jpg" class="sign_up_left_image" title="Text message is quicker" /></li>
+                            <li>Take it mobile with our apps for iPhone, iPad
+                    <br />
+                                and Android smartphones.</li>
+                        </ul>
+                    </div>
+
+                    <!--The signup right div for the registration page-->
+                    <div id="sign_up_right">
+                        <form id="div_main_form" name="fmValidation" autocomplete="on">
+                            <p id="signup_username">
+                                <input type="radio" name="salutation" /><label>Mr.</label>
+                                <input type="radio" name="salutation" /><label>Mrs.</label>
+                                <input type="radio" name="salutation" /><label>Ms.</label>
+                                <input type="radio" name="salutation" /><label>Dr.</label>
+                                <input type="radio" name="salutation" /><label>Professor.</label>
+                            </p>
+                            <p>
+                                <label>First Name:</label><input id="fname" type="text" placeholder="Type your first name" class="signup_form_class" />
+                            </p>
+                            <p>
+                                <label class="label">Last Name:</label><input id="lname" type="text" placeholder="Type your last name" class="signup_form_class" />
+                            </p>
+                            <p>
+                                <label class="label">Email Address:</label>
+                                <input id="emailaddress" type="text" placeholder="name@domain.com" class="signup_form_class" />
+                            </p>
+                            <p>
+                                <label class="label">Confirm Email Address:</label>
+                                <input id="conf_emailaddress" type="text" placeholder="name@domain.com" class="signup_form_class" />
+                            </p>
+                            <p>
+                                <label class="label">Password:</label>
+                                <input id="fmPassword" type="password" class="signup_form_class" />
+                            </p>
+                            <p>
+                                <label class="label">Comment:</label>
+                                <textarea name="fmtxtarea" id="fmtxtarea" maxlength="255"></textarea>
+                            </p>
+                            <p>
+                                <input id="Checkbox_subscription" type="checkbox" checked="checked" />Use my email address to send me new menu and recipe related tips, promos from thedeltal.com®.
+                            </p>
+                            <input id="Reset" type="reset" value="  Reset  " class="signup_form_class" />
+                            <input id="Submit" type="submit" value="  Submit  " class="signup_form_class" onclick="return validate()" />
+                        </form>
+                    </div>
+
+                    <!--The footer div for the registration page-->
+                    <div id="signup_footer">
+                        <p>By registering you agree to our Terms of Use and Privacy Policy</p>
+                    </div>
+                </fieldset>
+            </div>
+
+            <!--Start, clear div-->
+            <div class="clear_div"></div>
+            <!--End, clear div-->
+
+            <div id="change_dom">
+                <fieldset>
+                    <legend>Document Object Model</legend>
+                    <form id="fmChangeDOM" name="fmChangeDOM">
+
+                        <textarea class="txtchange" id="txtchange">It's always a pleasure of having you here in the DelTal Sub Shop Restaurant!</textarea>
+
+                        <input type="button" value="Change Document Object Model Content" onclick="change()" />
+                    </form>
+                </fieldset>
+            </div>
+
+        </div>
+
+        <!-- footer div -->
+        <div>
+            <footer id="footer">
+                Copyright &copy;2014 University of Liverpool. All Rights Reserved.
+                <br />
+                <ol>
+                    <li>Albert O. Lartey, Jeremy Davis, Adrian Thompson, Emanuel Langit</li>
+                </ol>
+                <ol>
+                    <li>CKIT-503-201460-1: Programming the Internet</li>
+                    <li>Professor Frank Cook</li>
+                    <li>June 4th, 2014</li>
+                </ol>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<!--Title section of this project-->
+<!--Week 3: Group 1 Hand-in Assignment -->
+<html>
+<head>
+    <!--Title section of this project-->
+    <title>The DelTal Sub Shop Restaurant</title>
+
+    <!--The project meta information-->
+    <meta charset="UTF-8">
+    <meta name="description" content="The DelTal Sub Shop Restaurant">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Albert O. Lartey">
+
+    <!--The shortcut icon, Web site icon, tab icon or bookmark icon-->
+    <link rel="icon" type="image/x-icon" href="images/DelTal-icon.jpg" />
+
+    <!--Linking stylesheet to the prohject-->
+    <link href="css/main.css" rel="stylesheet" />
+    <script>
+        function changeImage1(img) {
+            document.getElementById('bigImage1').src = img;
+            setTimeout(function () { document.getElementById('bigImage1').src = img; }, 1250);
+        }
+    </script>
+
+    <script>
+        function changeImage2(img) {
+            document.getElementById('bigImage2').src = img;
+            setTimeout(function () { document.getElementById('bigImage2').src = img; }, 1250);
+        }
+    </script>
+    <script>
+        function changeImage3(img) {
+            document.getElementById('bigImage3').src = img;
+            setTimeout(function () { document.getElementById('bigImage3').src = img; }, 1250);
+        }
+    </script>
+</head>
+<body>
+    <!-- Top_level Div -->
+    <div id="main_wrapper">
+
+        <!--Start, main header &  company logo div-->
+        <div id="main_header_div">
+            <a href="#">
+                <img src="images/header.jpg" alt="LNA Data Solutions" id="Header_background_img" />
+            </a>
+            <!--Start, navbar div-->
+            <div id="navbar">
+                <ul class="nav">
+                    <li><a href="index.html" tabindex="0">Home</a></li>
+                    <li><a href="menu.html" tabindex="0">Menu</a></li>
+                    <li><a href="location.html" tabindex="0">Location</a></li>
+                    <li><a href="aboutus.html" tabindex="0">About Us</a></li>
+                    <li><a href="register.html" tabindex="0">Register</a></li>
+					<li>
+                        <form method="get" action="http://www.google.com/search">
+                            <div id="Div1">
+                                <input type="text" name="q" size="25" style="color: #808080;"
+                                    maxlength="255" value="Google site search"
+                                    onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; " />
+                                <input type="submit" value="Go!" />
+                                <input type="hidden" name="sitesearch" value="yoursite.com" />
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!--End, navbar div-->
+        </div>
+        <!--end, main header &  company logo div-->
+
+       <!--Start, clear div-->
+        <div class="clear_div"></div>
+        <!--End, clear div-->
+
+        <!--Start, main header div-->
+        <div id="about_DelTal_ss">
+            <article>
+                <header>
+                    <h2 class="about_deltal_company">Welcome to the DelTal Sub Shop Restaurant</h2>
+                </header>
+                <div id="about_deltal_company_description">
+                    <ul>
+                        <li>
+                            <p class="company_description">Serving Columbus NJ, Baltimore MD, San Francisco CA and Jamaica</p>
+                            <p class="company_details">
+                                The DelTal Sub Shop offers menu that includes over 30 assortments of subs, wraps, and sandwiches together with salads and side dishes as well as fresh baked desserts. The on-site bakery adds a whole new breadth to the superiority of the bread & rolls used in making every sub and sandwiches. Visit us and see why the DelTal Sub Shop will before long be your favorite and titillating place for breakfast, lunch, dinner, late-night, and any time Restaurant.
+
+                            </p>
+
+                        </li>
+                        <li>
+                            <p id="video_title" class="company_description">What's Cooking in DelTal Sub Shop kitchen? </p>
+                            <video controls="controls">
+                                <source src="video/WhatsCooking.mp4" type="video/mp4" title="Sub Shop Video Workshop">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </li>
+                    </ul>
+
+                </div>
+            </article>
+        </div>
+        <!-- content div -->
+
+               <!--Start, clear div-->
+        <div class="clear_div"></div>
+        <!--End, clear div-->
+
+        <div id="main_content_div">
+            <!-- left content div -->
+            <div id="main_content_section">
+                <ul>
+                    <li>
+                        <img alt="Turkey Sandwich 1" src="images/TurkeySandwichCut.jpg" class="main_content_image" id="bigImage1" onmouseover="changeImage1('images/TurkeySandwichWS.jpg')" onmouseout="changeImage1('images/TurkeySandwichCut.jpg')" title="http://www.theliveinkitchen.com/wp-content/uploads/2012/02/UltimateTurkeySandwichCut.jpg" />
+                    </li>
+                    <li>
+                        <article>
+                            <header>Optimum Turkey Sandwich</header>
+                            <section>
+                                <header>
+                                    <h5>ingredients</h5>
+                                </header>
+                                <p>
+                                    4 whole wheat hoagie buns<br />
+                                    1 pound deli turkey off the bone<br />
+                                    20 slices hard salami<br />
+                                    4 slices baby swiss cheese<br />
+                                    4 slices cojack cheese<br />
+                                    2 roma tomatoes, sliced<br />
+                                    4 leaves romaine lettuce<br />
+                                    Fresh ground pepper<br />
+                                    Mayonnaise<br />
+                                    Mustard<br />
+                                    Freshly ground black pepper<br />
+                                </p>
+                                <p>Cut bread horizontally in half. Smear the bottom half with mustard and the top half with mayonnaise. Layer the filling as follows: baby swiss cheese, turkey, black pepper, salami, tomatoes, cojack cheese, lettuce. Replace top half of bread and cut in half, if desired. Serve with baby carrots and grapes or chips and a pickle.</p>
+                            </section>
+                        </article>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img alt="Turkey Sandwich 2" src="images/Tomato_Pesto_Panini-1.jpg" class="main_content_image" id="bigImage2" onmouseover="changeImage2('images/Tomato_Pesto_Panini-2.jpg')" onmouseout="changeImage2('images/Tomato_Pesto_Panini-1.jpg')" title="http://healthytodayhealthytomorrows.com/wp-content/uploads/2012/06/IMG_80751.jpg" />
+                    </li>
+                    <li>
+                        <article>
+                            <header>Tomato Pesto Panini</header>
+                            <section>
+                                <header>
+                                    <h5>ingredients</h5>
+                                </header>
+                                <p>
+                                    2 slices whole grain bread (I like Market Pantry brand)<br />
+                                    1-2 tablespoons sun dried tomato pesto<br />
+                                    2 teaspoons pine nuts<br />
+                                    3 tomato slices<br />
+                                    3-4 slices fresh mozzarella<br />
+                                    Preheat a griddle or panini press to high. Spray it lightly with olive oil or cooking spray.<br />
+                                </p>
+                                <p>
+                                    Spread one slice of bread with the pesto, then sprinkle with pine nuts and top with tomato slices and fresh mozzarella. Top with the other 
+                            slice of bread, place the whole sandwich on the hot grill, and close the top. Grill 3-4 minutes or until browned and crisp on the 
+                            outside and melty on the inside. Remove from the grill and let rest a few seconds before cutting and serving. 470 calories to our daily calorie count and unless we regard this as a once in a while treat 
+                            it can add up to inches on our thighs, hips and waistlines
+                                </p>
+                            </section>
+                        </article>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img alt="Turkey Sandwich 3" src="images/reuben-wraps-md.jpg" class="main_content_image" id="bigImage3" onmouseover="changeImage3('images/reuben-wraps-md-2.jpg')" onmouseout="changeImage3('images/reuben-wraps-md.jpg')" title="http://www.delish.com/cm/delish/images/eQ/reuben-wraps-recipe-rbk-mdn.jpg" />
+                    </li>
+                    <li>
+                        <article>
+                            <header>Reuben Wraps Sandwich</header>
+                            <section>
+                                <header>
+                                    <h5>ingredients</h5>
+                                </header>
+                                <p>
+                                    2 cup(s) coleslaw mix<br />
+                                    1 cup(s) shredded carrots<br />
+                                    2 tablespoon(s) cider vinegar
+                                    6 tablespoon(s) Thousand Island dressing<br />
+                                    4 (8-inch) whole-wheat or multigrain tortillas or sandwich wraps<br />
+                                    4 leaves romaine or butter lettuce<br />
+                                    8 thin slices turkey<br />
+                                    8 thin slices Gruyère or other Swiss cheese<br />
+                                </p>
+                                <p>In a bowl, toss coleslaw mix, carrots, cider vinegar, and 2 tablespoons of the dressing until combined. Spread each wrap with 1 tablespoon of the remaining dressing. Line each wrap with a piece of lettuce. Place 2 slices of turkey on top of dressing in center. Place 2 slices of cheese on top of turkey. Top with about 1/3 cup of the coleslaw. Roll up burrito-style, tucking in sides.</p>
+                            </section>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer div -->
+        <div>
+            <footer id="footer">
+                Copyright &copy;2014 University of Liverpool. All Rights Reserved.
+                <br />
+                <ol>
+                    <li>Albert O. Lartey, Jeremy Davis, Adrian Thompson, Emanuel Langit</li>
+                </ol>
+                <ol>
+                    <li>CKIT-503-201460-1: Programming the Internet</li>
+                    <li>Professor Frank Cook</li>
+                    <li>June 4th, 2014</li>
+                </ol>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

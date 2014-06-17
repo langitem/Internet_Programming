@@ -1,0 +1,257 @@
+﻿/**setting initial padding to zero**/
+* {
+    padding: 0px;
+}
+
+/**setting up general properties for the page**/
+body {
+
+    font: 12px/18px Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+    flex-direction: column;
+    background-color:#dcdca1;
+}
+
+/**primarily, setting the page formatt to center**/
+header, section, footer, hgroup{ 
+    display: block; 
+}
+
+
+/***COMPANY LOGO AND NAME FORMATION - STARTS FROM THIS SECTION**/
+/**Attaching company logo and name**/
+#logo_header {
+    border: 1px solid #d3cfcf;
+    background: linear-gradient(55deg, #4B4242, white);
+    background:-webkit-linear-gradient(55deg, #4B4242, white);
+    background:-moz-linear-gradient(55deg, #4B4242, white);
+}
+
+/**controlling the image border radius**/
+.company_logo {
+    width:80px;
+    height: 60px;
+    margin-left:2px;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
+
+
+/**The header text utilizes h3 tag and therefore this setting is being applied to augment that tag**/
+h1 {
+    font-size: 250%;
+    font-stretch:ultra-expanded;
+    color:aliceblue;
+    border-bottom-color: azure;
+    text-shadow: -4px 4px 2px orange;
+    padding:8px; 
+    float:right;
+}
+
+
+/**Customizing the header listing to display inline block**/
+#logo_header li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 5px; 
+    padding-right: 5px;
+}
+
+
+/**the overall div tag uses the big wrapper with a page width of 1000px**/
+#main_wrapper {
+    width: 1000px;
+    min-height: 400px;
+    margin: 0px auto;
+    text-align:left;
+    position:relative;
+    background-color:white;
+}
+
+/**customizing the navigation header listing to display inline block and also placing the floating the last listing item to the right**/
+nav {
+    background-color:#404d94;
+    height: 30px;
+}
+
+    nav ol {
+    background-color:#404d94;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+
+#navigation_header li {
+    float: left;
+    display: inline-block;
+    list-style: none;
+    border-right: 1px solid white; 
+    padding-left: 5px; 
+    padding-right: 5px;
+}
+
+#navigation_header li:last-child {
+    float: right;
+    border-right: none;
+    border-left: none;
+}
+
+/* removing text decor associated with the a tag in the HTLM5 project */
+a {
+    text-decoration:none;
+    text-justify:distribute;
+    text-decoration-style:solid;
+    font-size:small;
+    color:white;
+    font-weight:800;
+}
+
+a:visited {
+    background-color:#7d93cf;
+} /* visited link */
+
+a:hover {
+    background-color:#FF704D;
+}   /* mouse over link */
+
+a:active {
+    background-color:#FF704D;
+}  /* selected link */
+
+/***COMPANY LOGO AND NAME SECTION ENDS HERE**/
+
+
+#sign_up {
+    background-color:white;
+}
+
+#signup_header h3 {
+    background-color:#eeeaa1;
+    border:1px solid #d3cfcf;
+    clear:both;
+    height: 30px;
+    padding-top:10px;
+}
+
+#main_div_section {
+    width: 850px;
+    margin: auto;
+    border-left: 1px solid #f2e8e8;
+    border-right: 1px solid #f2e8e8;
+
+}
+
+#sign_up_left {
+    float:left;
+    border-right: 1px solid #f2e8e8;
+    padding-left: 10px;
+    height: 450px;
+}
+
+#sign_up_left li {
+    display: inline-block;
+    list-style: none;
+}
+
+.sign_up_left_image {
+    width:50px;
+    height: 40px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#sign_up_right {
+    text-align:left;
+    padding: 0px 0px 0px 420px;
+}
+
+    #sign_up_right h3 {
+        background-color:aliceblue;
+    }
+
+#signup_footer {
+    background-color:#eeeaa1;
+    border:1px solid #d3cfcf;
+    clear:both;
+    text-align:center;
+}
+
+
+.signup_form_class[type="text"]{
+    width:200px;
+    display:block;
+    margin-bottom:10px;
+    border-radius:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:#f3ecec;
+}
+
+.signup_form_class[type="reset"]{
+    width:150px;
+    margin-left:35px;
+}
+
+.signup_form_class[type="submit"]{
+    width:150px;
+    margin-left:35px;
+}
+
+input[type="password"]{
+    width:200px;
+    display:block;
+    margin-bottom:10px;
+    border-radius:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:#f3ecec;
+}
+
+textarea {
+    width:320px;
+    height:60px;
+    display:block;
+    margin-bottom:10px;
+    border-radius:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:#f3ecec;
+}
+
+/**the footer section features enabled**/
+footer {
+    clear:both;
+    color:black;
+    text-align:center;
+    border-right:1px groove;
+    border-top-left-radius:25px;
+    -webkit-border-top-left-radius:25px;
+    -moz-border-radius-topleft:25px;
+    border-top-right-radius:25px;
+    -webkit-border-top-right-radius:25px;
+    -moz-border-radius-topright:25px;
+    background: linear-gradient(55deg, #4B4242, white);
+    background:-webkit-linear-gradient(55deg, #4B4242, white);
+    background:-moz-linear-gradient(55deg, #4B4242, white);
+    margin-top:10px;
+    padding:5px 5px 5px 5px;
+    font-weight:bold;
+}
+
+/**The company footer and authors details**/
+#footer li {
+    display: inline-block;
+    list-style: none;
+    border-right: 1px solid gray;
+    padding-left: 5px; padding-right: 5px;
+}
+
+    #footer li:first-child {
+        padding-left: 0px;
+    }
+
+    #footer li:last-child {
+        border-right: none;
+    }
