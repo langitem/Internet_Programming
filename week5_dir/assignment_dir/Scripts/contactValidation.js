@@ -11,7 +11,7 @@ function validateForm() {
 	var dotPosition = emailAddress.lastIndexOf(".");
 	
 	if (document.forms.contactForm.name.value == "") {
-		alert ("Please enter our name!");
+		alert ("Please enter your name!");
 		return false;
 	}
 	

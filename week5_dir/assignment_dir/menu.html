@@ -1,28 +1,45 @@
 ﻿<!DOCTYPE html>
 	<!--I've declared the file type for the page -->
-	<!--Programming the Internet - Davis Week 3 Group Project HIA -->
+	<!--Programming the Internet - Davis Week 5 Group Project HIA -->
 <html>
 <head>
-	<!--Our Group Project meta data details-->
+	<!--The Group Project meta data details are below-->
 		<meta charset="UTF-8">
 		<meta name="description" content="The DELTAL Sub Shop Restaurant">
 		<meta name="keywords" content="HTML,CSS,JavaScript">
 		<meta name="author" content="Jeremy Davis">
 		<link href="css/main.css" rel="stylesheet" />
-	<!--The short-cut icon, Web site icon, tab icon and bookmark icon-->
+	<!--The shortcut icon, web site icon, tab icon and bookmark icon-->
 
 	<link rel="icon" type="image/x-icon" href="images/DelTal-icon.jpg" />
 
-	<!--Declaring the Title for the Page -->	
+	<!--This is declaring the Title for the Menu Page -->	
 		<title>DELTAL Sub Shop Menu</title>
+		
+		<script src="Scripts/menuValidation.js"></script>
 </head>
-<body> <div id="main_wrapper">        <!--Start, main header &  company logo div-->        <div id="main_header_div">            <a href="#">                <img src="images/header.jpg" alt="The DelTal Sub Shop Restaurant" id="Header_background_img" />            </a>
-        <!-- Top_level Div -->
-    <div id="navbar">                <ul class="nav">                    <li><a href="index.html" tabindex="0">Home</a></li>                    <li><a href="menu.html" tabindex="0">Menu</a></li>                    <li><a href="location.html" tabindex="0">Location</a></li>                    <li><a href="aboutus.html" tabindex="0">About Us</a></li>                    <li><a href="register.html" tabindex="0">Register</a></li>					<li>                        <form method="get" action="http://www.google.com/search">                            <div id="Div1">                                <input type="text" name="q" size="25" style="color: #808080;"                                    maxlength="255" value="Google site search"                                    onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; " />                                <input type="submit" value="Go!" />                                <input type="hidden" name="sitesearch" value="yoursite.com" />                            </div>                        </form>                    </li>                </ul>            </div>
-			</div>        <!--Naming the Page -->
+<body> 
+	<div id="main_wrapper">        
+	<!--This is the start, main header &  company logo div at the top of the page in the banner-->        
+	<div id="main_header_div">            
+	<a href="#">               
+		<img src="images/header.jpg" alt="The DelTal Sub Shop Restaurant" id="Header_background_img" />            </a>
+     <!-- Top_div that displays our groups links to other members pages and the google search bar has been added as well-->
+    <div id="navbar">                
+	<ul class="nav">                    
+			<li><a href="index.html" tabindex="0">Home</a></li>                    
+			<li><a href="menu.html" tabindex="0">Menu</a></li>                    
+			<li><a href="location.html" tabindex="0">Location</a></li>                    
+			<li><a href="aboutus.html" tabindex="0">About Us</a></li>                    
+			<li><a href="register.html" tabindex="0">Register</a></li>					
+			<li><form method="get" action="http://www.google.com/search">                            
+	<div id="Div1">                                
+		<input type="text" name="q" size="25" style="color: #808080;"  maxlength="255" value="Google site search"                                    onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; " />                                <input type="submit" value="Go!" />                                <input type="hidden" name="sitesearch" value="yoursite.com" />                            </div>                        </form>                    </li>                </ul>            </div>
+	</div>        
+	<!--This is done to name the menu page -->
 		<div class = "menu">
                		<h2>DELTAL SUB SHOP MENU</h2>
-	<!--Creating the Menu DIV that will hold the menu options on the left side-->
+	<!--Creating the Menu div that will hold the menu options on the left side-->
 		<h3>Speciality Subs</h3>
 		1.) Italian Cold Cut -  
 	<!--Drop down box has been added to all selections to view Sizing and Pricing-->	
@@ -135,7 +152,7 @@
 				<option value="security">Small - $2</option>
 		</select>
 		<br /> Salad Options: House Salad, Cesear Salad, Spinach Salad, &amp; Cobb Salad. <br />
-				Salad Dressings: Balsamic Vinaigrette, Cesear, Blue Cheese, &amp; Ranch.
+				<br />Salad Dressings: Balsamic Vinaigrette, Cesear, Blue Cheese, &amp; Ranch.
 		</p>
 		<h3>Drinks</h3>
 		1.) Iced Tea -
@@ -168,17 +185,78 @@
 		<br /> Cola, Root Beer, Ginger Ale, Orange, &amp; Lemon-Lime. 
 		</p>
 		
-	<!--This section of the menu adds a text box for the user to enter comments on the menu -->						
-			<form method = "post" action = "menuform.php">
-					See something on our menu you want added? Please let us know:<br />
-					<textarea name = "comments" rows = "8" cols = "50"></textarea>
-					
-	<!--The follow input tags create a Submit and Clear buttons to the page at the end of the menu text box -->			
-			
-		  <br /><input type = "submit" name = "submit" value = "Submit" />
-				<input type = "reset"  value = "Clear" />
-			</form>
-		</div>		   <div>            <footer id="footer">                Copyright &copy;2014 University of Liverpool. All Rights Reserved.                <br />                <ol>                    <li>Albert O. Lartey, Jeremy Davis, Adrian Thompson, Emanuel Langit</li>                </ol>                <ol>                    <li>CKIT-503-201460-1: Programming the Internet</li>                    <li>Professor Frank Cook</li>                    <li>June 4th, 2014</li>                </ol>            </footer>        </div>		    		
-    </div>
+	<!--This section of the menu adds a text box for the user to enter comments on the menu -->
+	<!--This form prompts users to enter their First Name, Last Name, and Email Address to tell us what they think of the menu -->
+	<form id="div_main_form" name="fmValidation" autocomplete="on">
+
+					<p><br>See something on our menu you want added? <br />
+					<p><br>Please let us know by providing us your details and comments below:<br />
+					  <p>                           
+						   <p>
+
+                                <label>First Name:</label><input id="firstname" type="text" placeholder="Please type your first name" class="signup_form_class" />
+
+                            </p>
+
+                            <p>
+
+                                <label class="label">Last Name:</label><input id="lastname" type="text" placeholder="Please type your last name" class="signup_form_class" />
+
+                            </p>
+
+                            <p>
+
+                                <label class="label">Email Address:</label>
+
+                                <input id="emailaddress" type="text" placeholder="email@domain.com" class="signup_form_class" />
+
+                            </p>
+
+                            
+                            <p>
+
+                                <label class="label">Comment:</label>
+
+                                <textarea name="fmtxtarea" id="fmtxtarea" maxlength="255"></textarea>
+
+                            </p>
+
+    <!--Client side validation is demonstrated here as when a user clicks Submit the JavaScript runs checking to make sure all three text boxes and the text area are filled in. If they are not
+		it returns an error. If they are filled in it returns a Thank you message to the user. This demonstrates a JavaScript function triggered by an event on an HTML page-->
+							<input id="Submit" type="submit" value="Submit" onclick="return menuvalidate()" />
+                            <input id="Clear" type="reset" value="Clear"/></form>
+
+ <p>                           
+<p>
+<!--Calls the JavaScript labeled displayDate() to display the Current Date and Time on the page. This demonstrates use of the DOM to for the user to execute a command from the HTML page -->
+<button onclick="displayDate()">Click here for the Current Date &amp; Time!</button>
+
+<p id="dateandtime"></p>
+<!--Another piece of Javascript that produces a text box showing text. When the user hovers over the text box with the mouse the JavaScript is ran and changes the text.
+	This demonstrates the use of the DOM to change the contents of an HTML text box-->
+ <p>                       
+<div id="mouseover" onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:orange;width:170px;height:40px;padding:25px;"> Mouse Over For A Special Message From DELTAL Subs!</div>
+
+				
+	 </div>  					
+		
+						
+
+
+<!--Our teams footer has been added to my page for continuity and consistency with minor changes of appearance-->			  
+		<div>           
+			<footer id="footer">Copyright &copy;2014 University of Liverpool. All Rights Reserved.<br />               
+			<ol>                    
+				<li>Albert O. Lartey, Jeremy Davis, Adrian Thompson, Emanuel Langit</li>             
+				</ol>                
+				<ol>                    
+					<li>CKIT-503-201460-1: Programming the Internet</li>                  
+					<li>Professor Frank Cook</li>                   
+					<li>June 18th, 2014</li>                
+				</ol>            
+			</footer>        
+		</div>		    		
+		</div>
 </body>
 </html>
