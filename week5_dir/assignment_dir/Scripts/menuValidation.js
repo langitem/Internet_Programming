@@ -31,5 +31,8 @@ function displayDate() {
 }
 //This script is used to manipulate data in a text box. It will display an initial message and change the message when the user hovers over the box on the HTML page.
 function mOver(obj) {
-    obj.innerHTML = "Thank You For Being A Loyal Customer!"}function mOut(obj) {    obj.innerHTML = "Mouse Over For A Special Message From DELTAL Subs!"
+    obj.innerHTML = "Thank You For Being A Loyal Customer!"
+}
+function mOut(obj) {
+    obj.innerHTML = "Mouse Over For A Special Message From DELTAL Subs!"
 }
