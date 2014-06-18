@@ -6,7 +6,8 @@
  */
 
 function validateForm() {
-	var errorFree = true;
+	//var errorFree = true;
+	var errorMessage = "";
 
 	/*
 	 * Following was modeled after W3Schools:
@@ -19,28 +20,38 @@ function validateForm() {
 	
 	// validate name
 	if (document.forms.contactForm.name.value == "") {
-		errorFree = false;
-		alert ("Please enter your name!");
-		return false;
+		//errorFree = false;
+		errorMessage += "Name is missing.\n";
+		document.getElementById("name").style.borderColor = "red";
+		// alert ("Please enter your name!");
+		//return false;
 	}
 	
 	// validate email address
 	if ((atPosition < 1) || (dotPosition < atPosition + 2) || (dotPosition + 2 > emailAddress.length)) {
-		errorFree = false;
-		alert ("Please enter a valid email address!");
-		return false;
+		//errorFree = false;
+		errorMessage += "Invalid email address.\n";
+		document.getElementById("email").style.borderColor = "red";
+		// alert ("Enter a valid email address!");
+		//return false;
 	}
 	
 	// validate message
 	if (document.forms.contactForm.message.value == "") {
-		errorFree = false;
-		alert("Please enter a message!");
+		//errorFree = false;
+		errorMessage += "Blank message field\n";
+		document.getElementById("message").style.borderColor = "red";
+		// alert("Please enter a message!");
+		//return false;
+	}
+	
+	if (errorMessage == "") {
+		alert ("Thank you for your message! Will will contact you shortly");
+	} else {
+		alert ("Please correct the following errors:\n" + errorMessage);
 		return false;
 	}
 	
-	if (errorFree) {
-		alert ("Thank you for your message! Will will contact you shortly");
-	}
 	
 }
 
