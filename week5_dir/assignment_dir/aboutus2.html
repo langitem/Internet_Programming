@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!--Title section of this project-->
+    <title>About The DelTal Sub Shop Restaurant</title>
+
+    <!--The project meta information-->
+    <meta charset="UTF-8">
+    <meta name="description" content="The DelTal Sub Shop Restaurant">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Emanuel Langit version 0.3">
+
+    <!--The shortcut icon, Web site icon, tab icon or bookmark icon-->
+    <link rel="icon" type="image/x-icon" href="images/DelTal-icon.jpg" />
+
+    <!--Linking stylesheet to the prohject-->
+    <link href="css/main.css" rel="stylesheet" />
+    
+    <!-- validate input received in the contact section using external -->
+    <!-- JavaScript file -->
+    <script src = "Scripts/contactValidation.js"></script>
+</head>
+<body>
+    <!-- Top_level Div -->
+    <div id="main_wrapper">
+        <!--Start, main header &  company logo div-->
+        <div id="main_header_div">
+            <a href="#">
+                <img src="images/header.jpg" alt="The DelTal Sub Shop Restaurant" id="Header_background_img" />
+            </a>
+            <!--Start, navbar div-->
+            <div id="navbar">
+                <ul class="nav">
+                    <li><a href="index.html" tabindex="0">Home</a></li>
+                    <li><a href="menu.html" tabindex="0">Menu</a></li>
+                    <li><a href="location.html" tabindex="0">Location</a></li>
+                    <li><a href="aboutus.html" tabindex="0">About Us</a></li>
+                    <li><a href="register.html" tabindex="0">Register</a></li>
+					<li>
+                        <form method="get" action="http://www.google.com/search">
+                            <div id="Div1">
+                                <input type="text" name="q" size="25" style="color: #808080;"
+                                    maxlength="255" value="Google site search"
+                                    onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; " />
+                                <input type="submit" value="Go!" />
+                                <input type="hidden" name="sitesearch" value="yoursite.com" />
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!--End, navbar div-->
+        </div>
+        <!--end, main header &  company logo div-->
+
+        <div id="owners">
+            <h2>About Us</h2>
+
+            <h3>Jeremy Davis</h3>
+            <p>
+                My name is Jeremy Davis and I am from Baltimore, Maryland in the US. I am currently a System Administrator for Laureate Education and have been with the company for six years now after graduating from Stevenson University with a Bachelor’s degree in Computer Information Systems.
+            </p>
+            <p>
+                I’ve worn many hats in my time at my current job including Windows Administration, SharePoint Administration, Exchange Administration, and more recently as the Backup Administrator for our company utilizing Symantec Netbackup. I have also begun to work with our Linux team more extensively because I find it to be very interesting and I enjoy working on and learning new things. I do not have a lot of programming experience but I am looking forward to this learning experience. In my spare time I enjoy watching Baseball (Baltimore Orioles), playing cards, and traveling with my wife.
+            </p>
+            <h3>Emanuel Langit</h3>
+            <p>
+                My name Emanuel Langit, and I live in San Francisco, California, in the United States. I have a bachelor’s degree in Biology from the University of California, Santa Cruz. I started my professional career working in the laboratory performing DNA sequencing experiments and contributing to the completion of the human genome project. I eventually stopped working in the laboratory, and for the past 14 years, I have been developing, maintaining, and running bioinformatics software tools/pipelines within the biotechnology industry. Pretty much all of the software I have been involved in developing within this industry uses the command-line interface, so I am a complete novice when it comes to web programming.
+            </p>
+            <p>
+                My hobbies are playing basketball and dancing (I used to perform with a hip-hop dance troupe). However since this program has been keeping me quite busy, the only thing I have time for outside of doing school work is watching sports (basketball, baseball, and American football).
+            </p>
+            <h3>Albert Lartey</h3>
+            <p>
+                My name is Albert O. Lartey and a Ghanaian, West Africa but have migrated to the United States of America and lives in New Jersey with my three daughters, a son and a wonderful wife. I am an interesting instrumentalist and love to play the piano as well as acoustic guitar as a hobby.
+            </p>
+            <p>
+                I work for one of the famous companies in United States, Dow Jones and Company, a division of A News Corporation Company as a Senior Systems Administrator. I am in the Dow Jones Technology division which deals with Financial Information services and have approximately 14 years of working experience in the IT industry. My work involves managing myriad corporate websites, programming in C# (ASP.NET) and also writing SQL stored procedures.
+            </p>
+            <h3>Adrian Thompson</h3>
+            <p>
+                My name is Adrian Thompson and I am the Webmaster at the Ministry of National Security, Jamaica. I am 28 years of age and I have Bachelor's Degree in Computer Science and Information Technology from the University of Technology, Jamaica. I mainly focus Web Based application development using the PHP programming language but do program in Java, Python and C# as well.
+            </p>
+
+
+        </div>
+        <!-- end of owners div -->
+
+        <div id="message_us">
+            <h2>Contact</h2>
+            <p>Please use the form below to send us an email:</p>
+
+            <!-- start of form -->
+            <form name="contactForm" method="post" action="http://laureatestudentserver.com/IN61/aboutus.html">
+
+                <input type="hidden" name="receipient" value="deitel@deitel.com">
+                <input type="hidden" name="subject" value="Feedback Form">
+                <input type="hidden" name="redirect" value="main.html">
+
+                <p>
+                    <label>
+                        Name (required):<br>
+                        <input name="name" id="name" type="text" size="25">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Email address (required):<br>
+                        <input name="email" id = "email" type="text" size="25">
+                    </label>
+                </p>
+
+                <!-- <textarea> creates a multiline textbox -->
+                <p>
+                    <label>  
+                        Message:<br>
+                        <textarea name="message" id="message" rows="7" cols="70"></textarea>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Choose recipient:
+					<!-- the following presents a drop-down list -->
+                        <select name="recipient">
+                            <option selected>All</option>
+                            <option>Jeremy Davis</option>
+                            <option>Emanuel Langit</option>
+                            <option>Albert Lartey</option>
+                            <option>Adrian Thompson</option>
+
+                        </select>
+
+                    </label>
+                </p>
+
+                <p>
+                    <input id = "Submit" type="submit" value="Submit" onclick = "return validateForm()">
+                    <input type="reset" value="Clear">
+                </p>
+
+            </form>
+            <!-- end of form -->
+        </div>
+        <!-- end of message_us div -->
+                <!-- footer div -->
+           <div>
+            <footer id="footer">
+                Copyright &copy;2014 University of Liverpool. All Rights Reserved.
+                <br />
+                <ol>
+                    <li>Albert O. Lartey, Jeremy Davis, Adrian Thompson, Emanuel Langit</li>
+                </ol>
+                <ol>
+                    <li>CKIT-503-201460-1: Programming the Internet</li>
+                    <li>Professor Frank Cook</li>
+                    <li>June 4th, 2014</li>
+                </ol>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
