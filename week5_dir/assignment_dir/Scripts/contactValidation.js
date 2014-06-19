@@ -23,11 +23,8 @@ function validateForm() {
 	// validate name
 	if (document.forms.contactForm.name.value == "") {
 		errorFree = false;
-		//errorMessage += "Name is missing.\n";
 		errorMessageArray.push("Name is missing.");
 		document.getElementById("name").style.borderColor = "red";
-		// alert ("Please enter your name!");
-		//return false;
 	}
 	
 	/*
@@ -40,26 +37,19 @@ function validateForm() {
 	 */
 	if ((atPosition < 1) || (dotPosition < atPosition + 2) || (dotPosition + 2 > emailAddress.length)) {
 		errorFree = false;
-		//errorMessage += "Invalid email address.\n";
 		errorMessageArray.push("Invalid email address.");
 		document.getElementById("email").style.borderColor = "red"; // border color of the textbox will be changed to help the user.
-		// alert ("Enter a valid email address!");
-		//return false;
 	}
 	
 	// validate message
 	if (document.forms.contactForm.message.value == "") {
 		errorFree = false;
-		//errorMessage += "Blank message field\n";
 		errorMessageArray.push("Blank message field.");
 		document.getElementById("message").style.borderColor = "red";
-		// alert("Please enter a message!");
-		//return false;
 	}
 
 	// alert the user if their submission was successful or not:
 	if (errorFree) {
-		//alert(errorFree);
 		alert ("Thank you for your message!\nA confirmation email will be sent to: " + emailAddress + " \nWe will will contact you shortly.");
 	} else {
 		// traverse errorMessageArray and add it to the error message
