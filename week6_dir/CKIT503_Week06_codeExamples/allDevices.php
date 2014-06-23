@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<p>
-			<h2>List of Mobile Devices in the Database</h2>
+		<h2>List of Mobile Devices in the Database</h2>
 		</p>
 		<?php
 			$dsn = 'mysql:host=laureatestudentserver.com;dbname=laureate_mobiles';

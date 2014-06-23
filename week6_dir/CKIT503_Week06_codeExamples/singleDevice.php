@@ -8,7 +8,7 @@
 	<body>
 	
 		<p>
-		<h2>Device Search Result</h2>
+			<h2>Device Search Result</h2>
 		</p>
 		
 		<?php
@@ -21,8 +21,8 @@
 			$query = "SELECT * FROM devices WHERE refNo ='" . $refNo . "'";
 			/* The SQL says "Select everything from the devices table where the reference number equals that which the user typed into the previous HTML form. As the refNo is unique, there will be at most one record */
 			$results = $dbc->query($query); 
-			$rows = $results->rowCount();
-		 ?>  
+			$rows = $results->rowCount(); 
+		?>  
 		
 		
 		<?php 
@@ -32,7 +32,7 @@
 				$selectedDevice = $results->fetch();
 				/* Fetch a record from the $results variable and store it in $selectedDevice. There will be a maximum of one record */      
 		?>
-			<table border>
+				<table border>
 				<caption>The Device You Chose </caption>
 				<thead>
 					<tr>
@@ -47,25 +47,25 @@
 				</thead> 
 				<tr>
 					<td class = "left">
-						<?php echo $selectedDevice['refNo']; ?>
+					<?php echo $selectedDevice['refNo']; ?>
 					</td>
 					<td class = "left">
-						<?php echo $selectedDevice['name']; ?>
+					<?php echo $selectedDevice['name']; ?>
 					</td>
 					<td class = "left">
-						<?php echo $selectedDevice['deviceType']; ?>
+					<?php echo $selectedDevice['deviceType']; ?>
 					</td>
 					<td class = "left">
-						<?php echo $selectedDevice['colour']; ?>
+					<?php echo $selectedDevice['colour']; ?>
 					</td>
 					<td class = "right">
-						<?php echo $selectedDevice['stockLevel']; ?>
+					<?php echo $selectedDevice['stockLevel']; ?>
 					</td>
 					<td class = "right">
-						<?php echo $selectedDevice['salesThisMonth']; ?>
+					<?php echo $selectedDevice['salesThisMonth']; ?>
 					</td>
 					<td class = "right">
-						<?php echo $selectedDevice['customerRating']; ?>
+					<?php echo $selectedDevice['customerRating']; ?>
 					</td>
 				</tr>
 				<?php

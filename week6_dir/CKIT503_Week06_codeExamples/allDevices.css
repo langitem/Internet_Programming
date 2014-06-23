@@ -1,25 +1,25 @@
 table {
-border: 2px solid blue;
+	border: 2px solid blue;
 }
 
 caption {
-font-weight: bold;
+	font-weight: bold;
 }
 
 th {
-font-weight: bold;
-text-align: center;
-border: 1px solid blue;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid blue;
 }
 
 td {
-border: 1px solid blue;
+	border: 1px solid blue;
 }
 
 td.left {
-text-align: left;
+	text-align: left;
 }
 
 td.right {
-text-align: right;
+	text-align: right;
 }

@@ -26,8 +26,8 @@
 		<!DOCTYPE html>
 		<html>
 			<head>
-				<title> Update a Single Device's Details  </title>
-				<meta charset="utf-8" />
+			<title> Update a Single Device's Details  </title>
+			<meta charset="utf-8" />
 			</head>
 			<body>
 			
@@ -50,7 +50,7 @@
 				</form>
 			</body>
 		</html>
-		<?php
+<?php
 	}
 	$dbc = null;
 ?>
