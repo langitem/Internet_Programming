@@ -68,7 +68,7 @@
 					<?php echo $selectedDevice['customerRating']; ?>
 					</td>
 				</tr>
-				<?php
+		<?php
 			} // End of else
 			$dbc = null;
 		?>
