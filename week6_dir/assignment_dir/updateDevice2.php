@@ -6,11 +6,14 @@
 	$stockLevel = $_POST['stockLevel']; 
 	$salesThisMonth = $_POST['salesThisMonth'];
 	$customerRating = $_POST['customerRating'];
-	/* The above code retrieves data from the HTML form contained in updateDevice1.php */      
+	/* The above code retrieves data from the HTML form contained in updateDevice1.php */
+	/*
 	$dsn = 'mysql:host=laureatestudentserver.com;dbname=laureate_mobiles';
 	$username = 'laureate_xxxx';
 	$password = 'yyyyy';
 	$dbc = new PDO($dsn, $username, $password);
+	*/
+	include("../../../connection.php");
 	 
 	$sqlQuery = "UPDATE devices SET name = '$name', deviceType = '$deviceType', colour = '$colour', stockLevel = $stockLevel, salesThisMonth = $salesThisMonth, customerRating = $customerRating  WHERE refNo = '$refNo'"; 
 	/* The SQL says "Update the devices table by setting each field to the contents of the HTML form in updateDevice1.php". Only where the user changed something will any difference be seen */
@@ -27,7 +30,7 @@
 	{
 		echo("<h3>The update was unsuccessful</h3>");
 	}
-	echo("<p><a href='main.html'>Continue</a></p>");
+	echo("<p><a href='main-inc.html'>Continue</a></p>");
 ?>
 
 

@@ -14,9 +14,12 @@
 		<?php
 			$refNo = $_POST['refNo']; 
 			$dsn = 'mysql:host=laureatestudentserver.com;dbname=laureate_mobiles';
+			/*
 			$username = 'laureate_xxxx';
 			$password = 'yyyyy';
 			$dbc = new PDO($dsn, $username, $password);
+			*/
+			include("../../../connection.php");
 			
 			$query = "SELECT * FROM devices WHERE refNo ='" . $refNo . "'";
 			/* The SQL says "Select everything from the devices table where the reference number equals that which the user typed into the previous HTML form. As the refNo is unique, there will be at most one record */
@@ -74,7 +77,7 @@
 		?>
 		</table>
 		<?php
-			echo("<p><a href='main.html'>Continue</a></p>");
+			echo("<p><a href='main-inc.html'>Continue</a></p>");
 		?>
 	</body>
 </html>

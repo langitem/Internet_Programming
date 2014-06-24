@@ -1,9 +1,12 @@
 <?php
-	$refNo = $_POST['refNo']; 
+	$refNo = $_POST['refNo'];
+	/* 
 	$dsn = 'mysql:host=laureatestudentserver.com;dbname=laureate_mobiles';
 	$username = 'laureate_xxxx';
 	$password = 'yyyyy';
 	$dbc = new PDO($dsn, $username, $password);
+	*/
+	include("../../../connection.php");
 	
 	$query = "SELECT * FROM devices WHERE refNo = '$refNo'";
 	
@@ -12,7 +15,7 @@
 	
 	if ($rows == 0) {
 	      echo("<p> There is no device with the reference number " . $refNo . " in the devices table</p>");
-	      echo("<p><a href='main.html'>Continue</a>");
+	      echo("<p><a href='main-inc.html'>Continue</a>");
 	} else {
 		$deviceToUpdate = $results->fetch();      
 		$name = $deviceToUpdate['name'];

@@ -45,7 +45,7 @@
 				/* If no rows of data (no records) have been found */ 
 				{
 					echo("<p> There are currently no records in the devices table</p>");
-					echo("<p><a href='main.html'>Continue</a></p>");
+					echo("<p><a href='main-inc.html'>Continue</a></p>");
 				}
 				else {      
 					foreach ($results as $devices) :
@@ -81,6 +81,6 @@
 				/* Close the database connection */
 			?>
 		</table>
-		<?php echo("<p><a href='main.html'>Continue</a></p>"); ?>
+		<?php echo("<p><a href='main-inc.html'>Continue</a></p>"); ?>
 	</body>
 </html>
