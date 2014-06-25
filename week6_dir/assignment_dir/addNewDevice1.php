@@ -13,33 +13,88 @@
 	$query = "SELECT * FROM devices WHERE refNo = '$refNo'";
 	
 	$results = $dbc->query($query); 
-	$rows = $results->rowCount();  
+	$rows = $results->rowCount();
 	
 	if ($rows > 0) { // if this reference number already exists in the database
-	      echo("<p> This reference number already exists in the devices table!</p>");
+		echo("<p><h2> This reference number already exists in the devices table!</h2></p>");
 	      
-	      // Add code to display existing record:
-	    $deviceToUpdate = $results->fetch();      
-		$name = $deviceToUpdate['name'];
-		$deviceType = $deviceToUpdate['deviceType'];
-		$colour = $deviceToUpdate['colour'];
-		$stockLevel = $deviceToUpdate['stockLevel'];
-		$salesThisMonth = $deviceToUpdate['salesThisMonth'];
-		$customerRating = $deviceToUpdate['customerRating'];
+	    // Add code to display existing record:
+	    $deviceToAdd = $results->fetch();      
+		$name = $deviceToAdd['name'];
+		$deviceType = $deviceToAdd['deviceType'];
+		$colour = $deviceToAdd['colour'];
+		$stockLevel = $deviceToAdd['stockLevel'];
+		$salesThisMonth = $deviceToAdd['salesThisMonth'];
+		$customerRating = $deviceToAdd['customerRating'];
 		
-		echo ("<p> $refNo $name $deviceType $colour</p>");
+		// echo ("<p> $refNo $name $deviceType $colour</p>"); // ok for now, but delete after table display works
+		
+
+		// Add HTML code below for displaying row in table format:
+		?>
+		<!DOCTYPE html>
+		<html>
+			<head>
+				<TITLE> Display existing record </TITLE>
+				<meta charset="utf-8" />
+				<link href="allDevices.css" type="text/css" rel="stylesheet" />
+			</head>
+			<body>
+				<table border>
+					<caption>The Existing Record with this Reference Number</caption>
+					<thead>
+						<tr>
+							<th>refNo</th>
+							<th>name</th>
+							<th>deviceType</th>
+							<th>colour</th>
+							<th>stockLevel</th>
+							<th>salesThisMonth</th>
+							<th>customerRating</th>
+						</tr>
+					</thead> 
+					<tr>
+						<td class = "left">
+							<?php echo $deviceToAdd['refNo']; ?>
+						</td>
+						<td class = "left">
+							<?php echo $deviceToAdd['name']; ?>
+						</td>
+						<td class = "left">
+							<?php echo $deviceToAdd['deviceType']; ?>
+						</td>
+						<td class = "left">
+							<?php echo $deviceToAdd['colour']; ?>
+						</td>
+						<td class = "right">
+							<?php echo $deviceToAdd['stockLevel']; ?>
+						</td>
+						<td class = "right">
+							<?php echo $deviceToAdd['salesThisMonth']; ?>
+						</td>
+						<td class = "right">
+							<?php echo $deviceToAdd['customerRating']; ?>
+						</td>
+					</tr>
+				</table>
+			</body>
+		</html>
+		
+<?php
+		// end of HTML code displaying row in table format
 	    
-	    echo("<p><a href='main-inc.html'>Continue</a>");
-	} else {
+	    echo("<p><a href='main-inc.html'>Go Back</a>");
+		
+	} else { 
 	
 		/*
-		$deviceToUpdate = $results->fetch();      
-		$name = $deviceToUpdate['name'];
-		$deviceType = $deviceToUpdate['deviceType'];
-		$colour = $deviceToUpdate['colour'];
-		$stockLevel = $deviceToUpdate['stockLevel'];
-		$salesThisMonth = $deviceToUpdate['salesThisMonth'];
-		$customerRating = $deviceToUpdate['customerRating'];
+		$deviceToAdd = $results->fetch();      
+		$name = $deviceToAdd['name'];
+		$deviceType = $deviceToAdd['deviceType'];
+		$colour = $deviceToAdd['colour'];
+		$stockLevel = $deviceToAdd['stockLevel'];
+		$salesThisMonth = $deviceToAdd['salesThisMonth'];
+		$customerRating = $deviceToAdd['customerRating'];
 		*/
 ?>
 		
