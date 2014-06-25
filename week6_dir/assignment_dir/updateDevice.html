@@ -3,12 +3,14 @@
 	<head>
 		<title>Update a Single Device</title>
 		<meta charset="utf-8" />
+		<script src = "assignment6.js"></script>
 	</head>
 	<body>
 		<h2>Device Update Form</h2>
 		<form id="updateForm" action="updateDevice1.php" method="POST">
-			<p>Reference Number <input type="text" name="refNo" size="4" maxlength = "4"></p>
-			<p><input type=submit value="Check that the Device Exists"></p>
+			<p>Reference Number <input type="text" id="refNo" name="refNo" size="4" maxlength = "4"></p>
+			<p>test</p>
+			<p><input type=submit value="Check that the Device Exists" onclick = "return validateReferenceNumber()"></p>
 		</form>
 	</body>
 </html>
