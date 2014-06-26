@@ -18,7 +18,7 @@
 	*/
 	include("../../../connection.php");
 	 
-	$sqlQuery = "UPDATE devices SET name = '$name', deviceType = '$deviceType', colour = '$colour', stockLevel = $stockLevel, salesThisMonth = $salesThisMonth, customerRating = $customerRating  WHERE refNo = '$refNo'";
+	// $sqlQuery = "UPDATE devices SET name = '$name', deviceType = '$deviceType', colour = '$colour', stockLevel = $stockLevel, salesThisMonth = $salesThisMonth, customerRating = $customerRating  WHERE refNo = '$refNo'";
 	$sqlQuery = "DELETE FROM devices where refNo = '$refNo'";
 	/* The SQL says "Update the devices table by setting each field to the contents of the HTML form in updateDevice1.php". Only where the user changed something will any difference be seen */
 	$delete_result = $dbc->exec($sqlQuery);
