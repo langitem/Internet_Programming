@@ -13,8 +13,8 @@
 		
 		<?php
 			$refNo = $_POST['refNo']; 
-			$dsn = 'mysql:host=laureatestudentserver.com;dbname=laureate_mobiles';
 			/*
+			$dsn = 'mysql:host=laureatestudentserver.com;dbname=laureate_mobiles';
 			$username = 'laureate_xxxx';
 			$password = 'yyyyy';
 			$dbc = new PDO($dsn, $username, $password);
