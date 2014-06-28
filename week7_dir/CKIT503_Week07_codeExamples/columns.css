@@ -1,0 +1,41 @@
+#columnBox {
+-webkit-column-count: 3;
+/* For the WebKit browsers - Chrome and Safari */
+-moz-column-count: 3;
+/* For Firefox (Mozilla) */
+column-count: 3;
+/* The number of columns. "column-width" can also be set if required */
+-webkit-column-rule: 1px solid gray;
+-moz-column-rule: 1px solid gray;
+column-rule: 1px solid gray;
+/* This will insert lines between columns. It is a shorthand method of setting "column-rule-width", "column-rule-style" and "column-rule-color" */ 
+/* By default the gap between columns is 1em. If a different gap is required we can use e.g. "column-gap: 2em" */
+width: 75%;
+border-radius: 25px;
+padding: 10px;
+color: black;
+font-family: Arial, sans-serif;
+background-color: cyan;
+}
+
+#columnBox p {
+/* Applies to all paragraphs of the div called columnBox */
+margin-top: 0;
+margin-bottom: 0;
+/* Avoids blank lines between paragraphs */
+text-indent: 1em;
+/* The start of each paragraph will be indented */
+text-align: justify;
+/* Text will be justified i.e. both left and right edges of the text will be aligned */
+}
+
+#columnBox h1 {
+-webkit-column-span: all;
+-moz-column-span: all;
+column-span: all;
+/* The headline will extend across all columns */
+color: blue;
+font-family: Arial, sans-serif;
+font-weight: bold;
+font-size: 150%;
+}

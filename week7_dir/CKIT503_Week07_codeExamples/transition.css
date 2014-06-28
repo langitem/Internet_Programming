@@ -1,0 +1,20 @@
+h1 {
+color: black;
+font-family: Arial, sans-serif;
+font-weight: bold;
+font-size: 150%;
+
+transition-property: color, font-size;  /* The colour and the size of the headline text will change when the mouse hovers over it */
+transition-duration: 5s;  /* The transition will take 5 seconds  */
+transition-timing-function: linear; /* The transition will proceed at the same pace throughout. The default is "ease", which starts slowly, accelerates, and then finishes slowly */ 
+}
+/* A shorthand version of this would be:
+transition: color 2s linear 0;
+The last value (0) is the delay before the transition starts (transition-delay: 0;). Zero is the default value. 
+You are warned that these effects may not be implemented as intended by a particular browser */
+
+h1:hover {
+color: blue;
+font-size: 400%;
+}
+

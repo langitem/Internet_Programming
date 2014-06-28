@@ -1,0 +1,14 @@
+h1 {
+color: black;
+font-family: Arial, sans-serif;
+font-weight: bold;
+font-size: 400%;
+text-shadow: 3px 3px 3px gray;
+}
+
+#shadowBox {
+width: 50%;
+color: black;
+background-color: cyan;
+box-shadow: 5px 5px 5px gray;
+}

@@ -1,0 +1,7 @@
+#columnBox {
+-webkit-column-count: 3;
+/* For the WebKit browsers - Chrome and Safari */
+-moz-column-count: 3;
+/* For Firefox (Mozilla) */
+column-count: 3;
+}
