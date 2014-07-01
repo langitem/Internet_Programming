@@ -13,13 +13,22 @@
 		$inputContainsErrors = true;
 	}
 	
-	
-	
 	// determine if email address is valid:
+	if (preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $_POST[email])) { //regex taken from: http://www.w3schools.com/php/php_form_url_email.asp
+		$email = $_POST[email];
+	} else {
+		$inputContainsErrors = true;
+	}
 	
+	// determine if message contains letters:
+	if (preg_match("/^[A-Za-z]/", $_POST[name])) {
+		$message = $_POST[message];
+	} else {
+		$inputContainsErrors = true;
+	}
 	
-	// determine if message exists:
-	
+	// get recipient:
+	$recipient = $_POST[recipient];
 	
 	
 	// if there are errors, terminate the script:
@@ -37,9 +46,12 @@
 	$dbc = new PDO($dsn, $username, $password);
 	
 	// construct sql statement and execute it:
-	$sqlQuery = "INSERT INTO contacts (EmailAddress, Name, Message, Recipient) VALUES ('emanuel@mail.com', '$name', 'test message', 'Emanuel')";
+	$sqlQuery = "INSERT INTO contacts (EmailAddress, Name, Message, Recipient) VALUES ('emanuel@mail.com', '$name', '$message', '$recipient')";
 	$insert_result = $dbc->exec($sqlQuery);
 	
 	$dbc = null;
+	
+	
+	// send email confirmation to the user:
 
 ?>
