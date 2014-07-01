@@ -27,5 +27,41 @@
 	} else {
 		$inputContainsErrors = true;
 	}
+	
+	// if there are errors, terminate the script:
+	if ($inputContainsErrors == true) {
+		die();
+	}
+	
+	// if it makes it this far, then there were no errors in the user input
+	
+	// connect to the database:
+	$hostname = 'laureatestudentserver.com';
+	$username = 'laureate_IN61';
+	$password = 'mXdbsUHm0Kam';
+	// $link = mysql_connect("laureatestudentserver.com", "laureate_IN61", "mXdbsUHm0Kam");
+	$dbc = new PDO($hostname, $username, $password);
+	if (!dbc) {
+		die ('Could not connect: ' . mysql_error());
+	}
+	
+	
+	// open laureate_IN61 database:
+	//$db_selected = mysql_select_db("laureate_IN61", $link);
+	//if (!$db_selected) {
+	//	die ("Could not open laureate_IN61 database: " . mysql_error());
+	//}
+	
+	
+	// insert input into the contacts table:
+	$sqlQuery = "INSERT INTO contacts ". "(EmailAddress, Name, Message, Recipient)" . "VALUES ('$email', '$name', '$message', '$recipient')"
+	$insert_result = $dbc->exec($sqlQuery);
+	
+	
+	// close connection to the database:
+	$dbc = null;
+	
+	
+	// send email confirmation to the user:
 
 ?>
