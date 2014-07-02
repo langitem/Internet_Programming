@@ -53,5 +53,12 @@
 	
 	
 	// send email confirmation to the user:
+	$to = $email;
+	$from = 'restaurant@thedeltal.com';
+	$subject = 'Confirmation of inquiry received';
+	$messageToUser = "Thank you for your inquiry. We will respond in a timely manner.\n\n".
+						"Regards\n\nThe DelTal Restaurant Staff\n\n\n".
+						"This is an automated response; Please do not reply";
+	mail($to, $subject, $messageToUser, "From: $from\n");
 
 ?>
