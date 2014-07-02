@@ -60,5 +60,11 @@
 						"Regards\n\nThe DelTal Restaurant Staff\n\n\n".
 						"This is an automated response; Please do not reply";
 	mail($to, $subject, $messageToUser, "From: $from\n");
+	
+	
+	// redirect to home page:
+	header("Location: http://laureatestudentserver.com/IN61/index.html");
+	
+	die();
 
 ?>
