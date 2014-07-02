@@ -46,7 +46,7 @@
 	$dbc = new PDO($dsn, $username, $password);
 	
 	// construct sql statement and execute it:
-	$sqlQuery = "INSERT INTO contacts (EmailAddress, Name, Message, Recipient) VALUES ('emanuel@mail.com', '$name', '$message', '$recipient')";
+	$sqlQuery = "INSERT INTO Messages_from_aboutUs (EmailAddress, Name, Message, Recipient) VALUES ('$email', '$name', '$message', '$recipient')";
 	$insert_result = $dbc->exec($sqlQuery);
 	
 	$dbc = null;
