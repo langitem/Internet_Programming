@@ -1,0 +1,420 @@
+﻿/**Author: Albert O. Lartey || Project: Week 3 Group HIA**/
+
+/**setting up general properties for the page**/
+body {
+    font: 13px Verdana, Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    padding: 0px 0px 0px 0px;
+    background-color: aliceblue;
+}
+
+/**The overall div tag uses the big wrapper with a page width of 1000px**/
+#main_wrapper {
+    width: 1000px;
+    min-height: 800px;
+    margin: 0px auto;
+    text-align: left;
+    background-color: white;
+}
+
+/**The overall div tag uses the big wrapper with a page width of 1000px**/
+#main_header_div {
+    height: 130px;
+    position: relative;
+}
+
+.clear_div {
+    clear: both;
+    margin: 20px 0px;
+    padding: 0;
+}
+
+header {
+    font-size: 1.30em;
+    font-weight:800;
+}
+
+
+/**STARTING: Customizing the about the company and video for inline display - START HERE**/
+#about_deltal_company_description {
+    background-color: #f7fcfc;
+    padding-left: 20px;
+    height: 250px;
+}
+
+    #about_deltal_company_description li {
+        display: inline-block;
+        list-style: none;
+        width: 400px;
+        /*border-right: 1px solid;*/
+    }
+
+        #about_deltal_company_description li:last-child {
+            border-right: none;
+            float: right;
+        }
+
+.company_description {
+    font-weight: 800;
+}
+
+video {
+    width: 340px;
+    height:180px;
+}
+
+
+/**ENDING: Customizing the about the company and video for inline display - ENDS HERE**/
+
+
+/***COMPANY LOGO AND NAME FORMATION - STARTS FROM THIS SECTION**/
+#Header_background_img {
+    width: 1000px;
+    height: 130px;
+}
+
+.clear_div {
+    clear: both;
+    margin: 20px 0px;
+    padding: 0;
+}
+
+
+/**STARTING: Navigation bar stylesheet, displaying inline block and also floating the right**/
+#navbar {
+    position: absolute;
+    top: 120px;
+    background-color: black;
+    height: 25px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+ul.nav {
+    float: right;
+    margin: 0px;
+    list-style: none;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+
+    ul.nav a, ul.nav, a:visited {
+        color: white;
+        padding: 5px 10px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+
+
+#navbar li:last-child {
+    float: right;
+    border-right: none;
+    border-left: none;
+}
+
+
+nav ul {
+    background-color: black;
+    margin-top: 0px;
+}
+
+#navbar li {
+    float: left;
+    display: inline-block;
+    list-style: none;
+    border-right: 1px solid white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    text-justify: distribute;
+    text-decoration-style: solid;
+    font-size: small;
+    color: white;
+    font-weight: 800;
+}
+
+    a:hover, a:active {
+        background-color: #FF704D;
+    }
+/**ENDING: Navigation bar stylesheet, displaying inline block and also floating the right**/
+
+
+/**STARTING: Telling the consumers more about the Deltal sub shop company**/
+.about_deltal_company {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.about_deltal_company_description {
+    text-align: left;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+/**ENDING: Telling the consumers more about the Deltal sub shop company**/
+
+/**DealTal's content and image listings**/
+#main_content_section li {
+    display: inline-block;
+    border-right: 1px solid gray;
+    padding-left: 30px;
+    padding-right: 5px;
+    width: 400px;
+}
+
+    #main_content_section li:last-child {
+        border-right: none;
+    }
+
+
+/**Resizing DelTal's content styling**/
+.main_content_image {
+    width: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    animation-fill-mode: forwards;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+
+/**STARTING: company footer and authors details**/
+footer {
+    clear: both;
+    color: black;
+    text-align: center;
+    border-right: 1px groove;
+    border-top-left-radius: 25px;
+    -webkit-border-top-left-radius: 25px;
+    -moz-border-radius-topleft: 25px;
+    border-top-right-radius: 25px;
+    -webkit-border-top-right-radius: 25px;
+    -moz-border-radius-topright: 25px;
+    background: linear-gradient(55deg, #4B4242, white);
+    background: -webkit-linear-gradient(55deg, #4B4242, white);
+    background: -moz-linear-gradient(55deg, #4B4242, white);
+    margin-top: 10px;
+    padding: 5px 5px 5px 5px;
+    font-weight: bold;
+}
+
+#footer li {
+    display: inline-block;
+    list-style: none;
+    border-right: 1px solid gray;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+    #footer li:first-child {
+        padding-left: 0px;
+    }
+
+    #footer li:last-child {
+        border-right: none;
+    }
+
+/**ENDING: company footer and authors details**/
+
+
+
+
+/**STARTING: Registration form and DOM page CSS section**/
+#sign_up {
+    background-color:white;
+}
+
+#signup_header h3 {
+    background-color:aliceblue;
+    border:1px solid #d3cfcf;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font: 100 Verdana, Arial, Helvetica, sans-serif;
+}
+
+#main_div_section {
+    padding: 20px;
+}
+
+#sign_up_left {
+    float:left;
+    border-right: 1px solid #f2e8e8;
+    padding-left: 10px;
+    height: 450px;
+}
+
+#sign_up_left li {
+    display: inline-block;
+    list-style: none;
+}
+
+.sign_up_left_image {
+    width:50px;
+    height: 40px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#sign_up_right {
+    text-align:left;
+    padding: 0px 0px 20px 420px;
+}
+
+#signup_footer {
+    background-color:aliceblue;
+    border:1px solid #d3cfcf;
+    clear:both;
+    text-align:center;
+}
+
+
+.signup_form_class[type="text"]{
+    width:300px;
+    display:block;
+    margin-bottom:10px;
+    border-radius:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:#f3ecec;
+}
+
+.signup_form_class[type="reset"]{
+    width:150px;
+    margin-left:35px;
+}
+
+.signup_form_class[type="submit"]{
+    width:150px;
+    margin-left:35px;
+}
+
+input[type="password"]{
+    width:300px;
+    display:block;
+    margin-bottom:10px;
+    border-radius:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:#f3ecec;
+}
+
+textarea {
+    width:300px;
+    height:60px;
+    display:block;
+    margin-bottom:10px;
+    border-radius:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:#f3ecec;
+}
+
+/**Start: Legend decorations **/
+legend {
+    border-left:1px groove;
+    border-right:1px groove;
+    padding:5px 5px 5px 5px;
+    border-radius:50px;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    color:white;
+    font-size:small;
+    font-weight:800;
+    background:radial-gradient(circle, purple 80%, orange);
+    background:-webkit-radial-gradient(center, circle, purple 80%, orange);
+    background:-moz-radial-gradient(center, circle, purple 80%, orange);
+}
+
+#txtchange {
+    color: black;
+    font-size: small;
+    font-weight: 800;
+    text-align: center;
+    margin:auto;
+}
+/**End: Legend decorations **/
+
+
+/**Displaying Thank you message for thankyou.html page**/
+#message_div {
+    padding: 20px 20px 20px 60px;
+    font-size: 1.40em;
+    color: white;
+}
+
+
+/**ENDING: Registration form and DOM page CSS section**/
+
+
+
+/**STARTING: About Us Page CSS section**/
+#owners, #message_us, #txtchange, #lblthanks {
+    padding: 20px 20px 20px 20px;
+}    
+
+
+/**ENDING: About Us Page CSS section**/
+
+
+
+/**MENU PAGE CSS DETAILS**/
+/*Setting the attributes for the left div using Class Selectors for the Menu */
+.menu {
+    clear: left;
+    width: 40%;
+    margin: 15px;
+    padding: 5px;
+    font-size: 11pt;
+}
+
+
+/*Setting the attributes for the right div using Class Selectors for the menu images */
+
+.subpicture {
+    position: absolute;
+    top: 400px;
+    right: 200px;
+}
+
+.friespicture {
+    position: absolute;
+    top: 735px;
+    right: 350px;
+}
+
+.sodapicture {
+    position: absolute;
+    top: 960px;
+    right: 350px;
+}
+/**ENDING: Menu Page CSS section**/
